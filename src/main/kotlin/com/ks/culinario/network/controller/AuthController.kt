@@ -1,7 +1,6 @@
-package com.ks.culinario.web.controller
+package com.ks.culinario.network.controller
 
 import com.ks.culinario.domain.service.AuthService
-import com.ks.culinario.domain.service.UserService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController

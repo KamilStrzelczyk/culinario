@@ -1,17 +1,10 @@
 package com.ks.culinario.domain.service
 
-import org.springframework.stereotype.Service
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
+import com.ks.culinario.domain.model.Recipe
 
 interface RecipeService {
-
-    fun getAll(): List<String>
-
-    fun get(id : String): String
-
-    fun getByCategories(): List<String>
-
-    fun createRecipe()
+    fun getAll(): List<Recipe>
+    fun get(id: Int): Recipe
+    fun create(recipe: Recipe): Recipe
+    fun delete(id: Int)
 }
