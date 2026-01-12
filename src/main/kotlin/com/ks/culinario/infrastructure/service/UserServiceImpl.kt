@@ -1,29 +1,31 @@
 package com.ks.culinario.infrastructure.service
 
+import com.ks.culinario.data.mapper.UserMapper
 import com.ks.culinario.domain.model.User
 import com.ks.culinario.domain.repository.UserRepository
 import com.ks.culinario.domain.service.UserService
+import com.ks.culinario.network.dto.UserDTO
 import org.springframework.stereotype.Service
 
 @Service
-class UserServiceImpl(private val userRepository: UserRepository) : UserService {
+class UserServiceImpl(private val userRepository: UserRepository,
+                      private val userMapper: UserMapper) : UserService {
 
-    override fun getAllUsers(): List<User> = userRepository.findAll()
+    override fun getAllUsers(): List<UserDTO> = userRepository.findAll().map { userMapper.toDTO(it) }
 
-    override fun getUser(id: Long): User {
-        return userRepository.findById(id) ?: throw RuntimeException("User not found")
+    override fun getUser(id: Long): UserDTO {
+        return userRepository.findById(id)?.let { userMapper.toDTO(it) } ?: throw RuntimeException("User not found")
     }
 
-    override fun createUser(user: User): User {
-        return userRepository.save(user)
+    override fun createUser(user: UserDTO) {
+         userRepository.save(userMapper.toDomain(user))
     }
 
     override fun deleteUser(id: Long) {
         userRepository.deleteById(id)
     }
 
-    override fun updateUser(user: User): User {
-        // Tutaj mogłaby być logika sprawdzająca czy user istnieje
-        return userRepository.save(user)
+    override fun updateUser(user: UserDTO) {
+         userRepository.save(userMapper.toDomain(user))
     }
 }

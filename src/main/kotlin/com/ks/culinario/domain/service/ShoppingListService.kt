@@ -1,10 +1,10 @@
 package com.ks.culinario.domain.service
 
-import com.ks.culinario.domain.model.ShoppingList
+import com.ks.culinario.network.dto.ShoppingListDTO
 
 interface ShoppingListService {
-    fun getAll(): List<ShoppingList>
-    fun get(id: Int): ShoppingList
-    fun create(shoppingList: ShoppingList): ShoppingList
+    fun getAll(): List<ShoppingListDTO>
+    fun get(id: Int): ShoppingListDTO
+    fun create(shoppingListDTO: ShoppingListDTO)
     fun delete(id: Int)
 }

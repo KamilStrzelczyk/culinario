@@ -8,7 +8,7 @@ data class Recipe(
     val owner: String,
     val category: String,
     val created: String,
-    val shoppingList: ShoppingList,
+    val shoppingListId: Int?,
 ){
     data class RecipeStep(
         val title : String,

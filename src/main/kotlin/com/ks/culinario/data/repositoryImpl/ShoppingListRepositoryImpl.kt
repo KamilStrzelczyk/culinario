@@ -11,26 +11,19 @@ class ShoppingListRepositoryImpl(
     private val mapper: ShoppingListMapper
 ) : ShoppingListRepository {
 
-    private val database = mutableMapOf<Int, ShoppingListEntity>()
-    private var idCounter = 1
 
     override fun findAll(): List<ShoppingList> {
-        return database.values.map { mapper.toDomain(it) }
+        return listOf(ShoppingList(1, "", "", emptyList()))
     }
 
     override fun findById(id: Int): ShoppingList? {
-        return database[id]?.let { mapper.toDomain(it) }
+        return ShoppingList(1, "", "", emptyList())
     }
 
-    override fun save(shoppingList: ShoppingList): ShoppingList {
-        val entity = mapper.toEntity(shoppingList)
-        val id = entity.id ?: idCounter++
-        val savedEntity = entity.copy(id = id)
-        database[id] = savedEntity
-        return mapper.toDomain(savedEntity)
+    override fun save(shoppingList: ShoppingList) {
+
     }
 
     override fun deleteById(id: Int) {
-        database.remove(id)
     }
 }

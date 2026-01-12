@@ -1,6 +1,5 @@
 package com.ks.culinario.network.controller
 
-import com.ks.culinario.domain.model.User
 import com.ks.culinario.domain.service.UserService
 import com.ks.culinario.network.dto.UserDTO
 import org.springframework.web.bind.annotation.*
@@ -11,42 +10,26 @@ class UserController(private val userService: UserService) {
 
     @GetMapping
     fun getAllUsers(): List<UserDTO> {
-        return userService.getAllUsers().map { it.toDTO() }
+        return userService.getAllUsers()
     }
 
     @GetMapping("/{id}")
     fun getUser(@PathVariable id: Long): UserDTO {
-        return userService.getUser(id).toDTO()
+        return userService.getUser(id)
     }
 
     @PostMapping
-    fun createUser(@RequestBody userDTO: UserDTO): UserDTO {
-        val user = userDTO.toDomain()
-        val createdUser = userService.createUser(user)
-        return createdUser.toDTO()
+    fun createUser(@RequestBody userDTO: UserDTO) {
+         userService.createUser(userDTO)
     }
 
     @PutMapping
-    fun updateUser(@RequestBody userDTO: UserDTO): UserDTO {
-        val user = userDTO.toDomain()
-        val updatedUser = userService.updateUser(user)
-        return updatedUser.toDTO()
+    fun updateUser(@RequestBody userDTO: UserDTO) {
+         userService.updateUser(userDTO)
     }
 
     @DeleteMapping("/{id}")
     fun deleteUser(@PathVariable id: Long) {
         userService.deleteUser(id)
     }
-
-    private fun User.toDTO() = UserDTO(
-        id = this.id,
-        username = this.username,
-        email = this.email
-    )
-
-    private fun UserDTO.toDomain() = User(
-        id = this.id,
-        username = this.username,
-        email = this.email
-    )
 }

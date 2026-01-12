@@ -13,33 +13,18 @@ class RecipeRepositoryImpl(
     private val shoppingListRepository: ShoppingListRepository
 ) : RecipeRepository {
 
-    private val database = mutableMapOf<Int, RecipeEntity>()
-    private var idCounter = 1
-
     override fun findAll(): List<Recipe> {
-        return database.values.map { entity ->
-            val shoppingList = entity.shoppingListId?.let { shoppingListRepository.findById(it) }
-            mapper.toDomain(entity, shoppingList)
-        }
+        return   listOf(Recipe(1, "", "", Recipe.RecipeStep("",""), "", "", "", 1))
     }
 
     override fun findById(id: Int): Recipe? {
-        val entity = database[id] ?: return null
-        val shoppingList = entity.shoppingListId?.let { shoppingListRepository.findById(it) }
-        return mapper.toDomain(entity, shoppingList)
+     return   Recipe(1, "", "", Recipe.RecipeStep("",""), "", "", "", 1)
     }
 
-    override fun save(recipe: Recipe): Recipe {
-        val entity = mapper.toEntity(recipe)
-        val id = entity.id ?: idCounter++
-        val savedEntity = entity.copy(id = id)
-        database[id] = savedEntity
-        
-        val shoppingList = savedEntity.shoppingListId?.let { shoppingListRepository.findById(it) }
-        return mapper.toDomain(savedEntity, shoppingList)
+    override fun save(recipe: Recipe) {
+
     }
 
     override fun deleteById(id: Int) {
-        database.remove(id)
     }
 }
