@@ -1,16 +1,17 @@
 package com.ks.culinario.network.controller
 
+import LoginRequestDTO
 import com.ks.culinario.domain.service.AuthService
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api/auth")
 class AuthController(private val authService: AuthService) {
 
-    @GetMapping("/login")
-    fun login(): Boolean = authService.login()
+    @PostMapping("/login")
+    fun login(@RequestBody request: LoginRequestDTO): String {
+        return authService.login(loginRequestDTO = request)
+    }
 
     @GetMapping("/logout")
     fun logout(): Boolean = authService.logout()

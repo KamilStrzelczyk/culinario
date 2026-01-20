@@ -1,0 +1,4 @@
+data class LoginRequestDTO(
+    val username: String,
+    val password: String
+)

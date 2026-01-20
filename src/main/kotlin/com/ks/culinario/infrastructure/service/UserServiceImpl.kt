@@ -1,24 +1,26 @@
 package com.ks.culinario.infrastructure.service
 
 import com.ks.culinario.data.mapper.UserMapper
-import com.ks.culinario.domain.model.User
 import com.ks.culinario.domain.repository.UserRepository
 import com.ks.culinario.domain.service.UserService
 import com.ks.culinario.network.dto.UserDTO
 import org.springframework.stereotype.Service
 
 @Service
-class UserServiceImpl(private val userRepository: UserRepository,
-                      private val userMapper: UserMapper) : UserService {
-
-    override fun getAllUsers(): List<UserDTO> = userRepository.findAll().map { userMapper.toDTO(it) }
+class UserServiceImpl(
+    private val userRepository: UserRepository,
+    private val userMapper: UserMapper
+) : UserService {
+    override fun getAllUsers(): List<UserDTO> {
+      return userRepository.findAll().map { userMapper.toDTO(it) }
+    }
 
     override fun getUser(id: Long): UserDTO {
         return userRepository.findById(id)?.let { userMapper.toDTO(it) } ?: throw RuntimeException("User not found")
     }
 
     override fun createUser(user: UserDTO) {
-         userRepository.save(userMapper.toDomain(user))
+        userRepository.save(userMapper.toDomain(user))
     }
 
     override fun deleteUser(id: Long) {
@@ -26,6 +28,6 @@ class UserServiceImpl(private val userRepository: UserRepository,
     }
 
     override fun updateUser(user: UserDTO) {
-         userRepository.save(userMapper.toDomain(user))
+        userRepository.save(userMapper.toDomain(user))
     }
 }

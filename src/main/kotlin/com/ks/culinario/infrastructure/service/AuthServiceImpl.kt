@@ -1,12 +1,28 @@
 package com.ks.culinario.infrastructure.service
 
+import LoginRequestDTO
+import com.ks.culinario.domain.repository.UserRepository
 import com.ks.culinario.domain.service.AuthService
+import com.ks.culinario.network.security.JwtTokenProvider
+import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Service
 
 @Service
-class AuthServiceImpl: AuthService {
-    override fun login(): Boolean {
-        TODO("Not yet implemented")
+class AuthServiceImpl(
+    private val userRepository: UserRepository,
+    private val jwtTokenProvider: JwtTokenProvider,
+    private val passwordEncoder: PasswordEncoder
+) : AuthService {
+    override fun login(request: LoginRequestDTO): String {
+        val user = userRepository.findByUsername(request.username)
+            ?: throw RuntimeException("User not found")
+
+        if (!passwordEncoder.matches(request.password, user.password)) {
+            throw RuntimeException("Bad credentials")
+        }
+
+        val token = jwtTokenProvider.generateToken(user)
+        return token
     }
 
     override fun logout(): Boolean {
