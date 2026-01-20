@@ -5,6 +5,6 @@ import com.ks.culinario.network.dto.ShoppingListDTO
 interface ShoppingListService {
     fun getAll(): List<ShoppingListDTO>
     fun get(id: Int): ShoppingListDTO
-    fun create(shoppingListDTO: ShoppingListDTO)
+    fun create(shoppingList: ShoppingListDTO)
     fun delete(id: Int)
 }

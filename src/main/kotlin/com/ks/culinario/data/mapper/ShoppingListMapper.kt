@@ -1,7 +1,7 @@
 package com.ks.culinario.data.mapper
 
-import com.ks.culinario.domain.model.ShoppingList
 import com.ks.culinario.data.entity.ShoppingListEntity
+import com.ks.culinario.domain.model.ShoppingList
 import com.ks.culinario.network.dto.ShoppingListDTO
 import com.ks.culinario.network.dto.ShoppingListItemDTO
 import org.springframework.stereotype.Component
@@ -51,5 +51,4 @@ class ShoppingListMapper {
             amount = this.amount
         )
     }
-
 }

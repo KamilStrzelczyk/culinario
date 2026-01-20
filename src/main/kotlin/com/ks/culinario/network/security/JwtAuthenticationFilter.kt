@@ -1,6 +1,10 @@
 package com.ks.culinario.network.security
 
 import com.ks.culinario.application.service.CustomUserDetailsService
+import io.jsonwebtoken.ExpiredJwtException
+import io.jsonwebtoken.MalformedJwtException
+import io.jsonwebtoken.UnsupportedJwtException
+import io.jsonwebtoken.security.SignatureException
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
@@ -16,6 +20,10 @@ class JwtAuthenticationFilter(
     private val userDetailsService: CustomUserDetailsService
 ) : OncePerRequestFilter() {
 
+    companion object {
+        private const val BEARER_PREFIX = "Bearer "
+    }
+
     override fun doFilterInternal(
         request: HttpServletRequest,
         response: HttpServletResponse,
@@ -27,16 +35,26 @@ class JwtAuthenticationFilter(
             if (jwt != null && tokenProvider.validateToken(jwt)) {
                 val username = tokenProvider.getUsernameFromJWT(jwt)
                 val userDetails = userDetailsService.loadUserByUsername(username)
-                
+
                 val authentication = UsernamePasswordAuthenticationToken(
-                    userDetails, null, userDetails.authorities
+                    userDetails,
+                    null,
+                    userDetails.authorities
                 )
                 authentication.details = WebAuthenticationDetailsSource().buildDetails(request)
 
                 SecurityContextHolder.getContext().authentication = authentication
             }
-        } catch (ex: Exception) {
-            logger.error("Could not set user authentication in security context", ex)
+        } catch (ex: SignatureException) {
+            logger.error("Invalid JWT signature: ", ex)
+        } catch (ex: MalformedJwtException) {
+            logger.error("Invalid JWT token: ", ex)
+        } catch (ex: ExpiredJwtException) {
+            logger.error("Expired JWT token: ", ex)
+        } catch (ex: UnsupportedJwtException) {
+            logger.error("Unsupported JWT token: ", ex)
+        } catch (ex: IllegalArgumentException) {
+            logger.error("JWT claims string is empty: ", ex)
         }
 
         filterChain.doFilter(request, response)
@@ -44,8 +62,8 @@ class JwtAuthenticationFilter(
 
     private fun getJwtFromRequest(request: HttpServletRequest): String? {
         val bearerToken = request.getHeader("Authorization")
-        if (bearerToken != null && bearerToken.startsWith("Bearer ")) {
-            return bearerToken.substring(7)
+        if (bearerToken != null && bearerToken.startsWith(BEARER_PREFIX)) {
+            return bearerToken.substring(BEARER_PREFIX.length)
         }
         return null
     }

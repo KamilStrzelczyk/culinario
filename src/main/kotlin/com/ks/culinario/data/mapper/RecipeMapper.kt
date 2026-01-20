@@ -68,7 +68,7 @@ class RecipeMapper {
             description = this.description
         )
     }
-    
+
     private fun RecipeStepDTO.toDomain(): Recipe.RecipeStep {
         return Recipe.RecipeStep(
             title = this.title,

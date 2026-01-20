@@ -1,6 +1,7 @@
 package com.ks.culinario.infrastructure.service
 
 import com.ks.culinario.data.mapper.RecipeMapper
+import com.ks.culinario.domain.exception.ResourceNotFoundException
 import com.ks.culinario.domain.repository.RecipeRepository
 import com.ks.culinario.domain.service.RecipeService
 import com.ks.culinario.network.dto.RecipeDTO
@@ -14,14 +15,13 @@ class RecipeServiceImpl(
 
     override fun getAll(): List<RecipeDTO> = recipeRepository.findAll().map { recipeMapper.toDTO(it) }
 
-
     override fun get(id: Int): RecipeDTO =
-         recipeRepository.findById(id)?.let { recipeMapper.toDTO(it) }
-            ?: throw RuntimeException("Recipe not found")
-
+        recipeRepository.findById(id)?.let { recipeMapper.toDTO(it) }
+            ?: throw ResourceNotFoundException("Recipe not found with id: $id")
 
     override fun create(recipeDTO: RecipeDTO) {
-         recipeRepository.save(recipeMapper.toDomain(recipeDTO))
+        val domain = recipeMapper.toDomain(recipeDTO)
+         recipeRepository.save(domain)
     }
 
     override fun delete(id: Int) {

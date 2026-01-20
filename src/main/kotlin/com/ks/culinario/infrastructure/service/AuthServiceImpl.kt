@@ -1,6 +1,8 @@
 package com.ks.culinario.infrastructure.service
 
 import LoginRequestDTO
+import com.ks.culinario.domain.exception.InvalidCredentialsException
+import com.ks.culinario.domain.exception.ResourceNotFoundException
 import com.ks.culinario.domain.repository.UserRepository
 import com.ks.culinario.domain.service.AuthService
 import com.ks.culinario.network.security.JwtTokenProvider
@@ -15,10 +17,10 @@ class AuthServiceImpl(
 ) : AuthService {
     override fun login(request: LoginRequestDTO): String {
         val user = userRepository.findByUsername(request.username)
-            ?: throw RuntimeException("User not found")
+            ?: throw ResourceNotFoundException("User not found with username: ${request.username}")
 
         if (!passwordEncoder.matches(request.password, user.password)) {
-            throw RuntimeException("Bad credentials")
+            throw InvalidCredentialsException("Bad credentials")
         }
 
         val token = jwtTokenProvider.generateToken(user)
@@ -32,5 +34,4 @@ class AuthServiceImpl(
     override fun refresh(): Boolean {
         TODO("Not yet implemented")
     }
-
 }

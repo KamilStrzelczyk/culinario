@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class CulinarioApplication
 
 fun main(args: Array<String>) {
-	runApplication<CulinarioApplication>(*args)
+    runApplication<CulinarioApplication>()
 }

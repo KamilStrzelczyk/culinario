@@ -9,9 +9,9 @@ data class Recipe(
     val category: String,
     val created: String,
     val shoppingListId: Int?,
-){
+) {
     data class RecipeStep(
-        val title : String,
+        val title: String,
         val description: String,
     )
 }
