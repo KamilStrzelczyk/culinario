@@ -2,6 +2,7 @@ package com.ks.culinario.data.mapper
 
 import com.ks.culinario.data.entity.UserEntity
 import com.ks.culinario.domain.model.User
+import com.ks.culinario.network.dto.NewUserDTO
 import com.ks.culinario.network.dto.UserDTO
 import org.springframework.stereotype.Component
 
@@ -17,12 +18,12 @@ class UserMapper {
         )
     }
 
-    fun toDomain(dto: UserDTO): User {
+    fun toDomain(dto: NewUserDTO): User {
         return User(
-            id = dto.id,
-            username = dto.username,
+            id = null,
+            username = dto.name,
             email = dto.email,
-            password = ""
+            password = dto.password
         )
     }
 
@@ -37,8 +38,8 @@ class UserMapper {
 
     fun toDTO(domain: User): UserDTO {
         return UserDTO(
-            id = domain.id,
-            username = domain.username,
+            id = domain.id!!,
+            name = domain.username,
             email = domain.email
         )
     }

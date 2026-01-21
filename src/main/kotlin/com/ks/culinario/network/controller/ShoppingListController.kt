@@ -1,6 +1,7 @@
 package com.ks.culinario.network.controller
 
 import com.ks.culinario.domain.service.ShoppingListService
+import com.ks.culinario.network.dto.NewShoppingListDTO
 import com.ks.culinario.network.dto.ShoppingListDTO
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
@@ -25,8 +26,8 @@ class ShoppingListController(private val shoppingListService: ShoppingListServic
     }
 
     @PostMapping
-    fun create(@RequestBody shoppingListDTO: ShoppingListDTO) {
-        shoppingListService.create(shoppingListDTO)
+    fun create(@RequestBody newShoppingListDTO: NewShoppingListDTO) {
+         shoppingListService.create(newShoppingListDTO)
     }
 
     @DeleteMapping("/{id}")

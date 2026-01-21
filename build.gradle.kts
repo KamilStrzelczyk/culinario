@@ -1,9 +1,10 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.kotlin.spring)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.spring.boot)
     alias(libs.plugins.spring.dependency.management)
-    alias(libs.plugins.detekt) apply true
+    alias(libs.plugins.detekt)
 }
 
 group = "com.ks"
@@ -25,6 +26,7 @@ dependencies {
     implementation(libs.spring.boot.starter.security)
     implementation(libs.spring.boot.starter.data.jpa)
     implementation(libs.kotlin.reflect)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.springdoc.openapi.ui)
 
     implementation(libs.jjwt.api)
@@ -34,16 +36,16 @@ dependencies {
     runtimeOnly(libs.h2.database)
 
     testImplementation(libs.spring.boot.starter.test)
-    testImplementation(libs.spring.boot.starter.web.test)
-    testImplementation(libs.spring.boot.starter.data.jpa.test)
     testImplementation(libs.kotlin.test.junit5)
     testImplementation(libs.mockk)
     testRuntimeOnly(libs.junit.platform.launcher)
+
+    detektPlugins(libs.detekt.formatting)
 }
 
 kotlin {
     compilerOptions {
-        freeCompilerArgs.addAll("-Xjsr305=strict", "-Xannotation-default-target=param-property")
+        freeCompilerArgs.addAll("-Xjsr305=strict")
     }
 }
 
@@ -54,8 +56,4 @@ tasks.withType<Test> {
 detekt {
     buildUponDefaultConfig = true
     autoCorrect = true
-
-    dependencies {
-        detektPlugins(libs.detekt.formatting)
-    }
 }

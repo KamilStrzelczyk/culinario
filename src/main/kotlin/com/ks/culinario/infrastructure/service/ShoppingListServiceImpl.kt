@@ -4,6 +4,7 @@ import com.ks.culinario.data.mapper.ShoppingListMapper
 import com.ks.culinario.domain.exception.ResourceNotFoundException
 import com.ks.culinario.domain.repository.ShoppingListRepository
 import com.ks.culinario.domain.service.ShoppingListService
+import com.ks.culinario.network.dto.NewShoppingListDTO
 import com.ks.culinario.network.dto.ShoppingListDTO
 import org.springframework.stereotype.Service
 
@@ -21,8 +22,8 @@ class ShoppingListServiceImpl(
         shoppingListMapper.toDTO(it)
     } ?: throw ResourceNotFoundException("Shopping list not found with id: $id")
 
-    override fun create(shoppingList: ShoppingListDTO) {
-        val domain = shoppingListMapper.toDomain(shoppingList)
+    override fun create(newShoppingListDTO: NewShoppingListDTO) {
+        val domain = shoppingListMapper.toDomain(newShoppingListDTO)
          shoppingListRepository.save(domain)
     }
 

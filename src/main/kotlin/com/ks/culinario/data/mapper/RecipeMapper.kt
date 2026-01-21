@@ -2,9 +2,11 @@ package com.ks.culinario.data.mapper
 
 import com.ks.culinario.data.entity.RecipeEntity
 import com.ks.culinario.domain.model.Recipe
+import com.ks.culinario.network.dto.NewRecipeDTO
 import com.ks.culinario.network.dto.RecipeDTO
 import com.ks.culinario.network.dto.RecipeStepDTO
 import org.springframework.stereotype.Component
+import java.time.LocalDate
 
 @Component
 class RecipeMapper {
@@ -35,9 +37,22 @@ class RecipeMapper {
         )
     }
 
+    fun toDomain(dto: NewRecipeDTO): Recipe {
+        return Recipe(
+            id = 0, // Nowy przepis, ID nada baza
+            title = dto.title,
+            description = dto.description,
+            step = dto.step.toDomain(),
+            owner = dto.owner,
+            category = dto.category,
+            created = LocalDate.now().toString(), // Ustawiamy datę utworzenia
+            shoppingListId = dto.shoppingListId
+        )
+    }
+
     fun toEntity(domain: Recipe): RecipeEntity {
         return RecipeEntity(
-            id = domain.id,
+            id = if (domain.id == 0) null else domain.id, // 0 w domenie -> null w encji (dla autoincrement)
             title = domain.title,
             description = domain.description,
             stepTitle = domain.step.title,

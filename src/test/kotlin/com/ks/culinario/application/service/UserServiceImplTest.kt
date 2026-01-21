@@ -1,9 +1,11 @@
 package com.ks.culinario.application.service
 
 import com.ks.culinario.data.mapper.UserMapper
+import com.ks.culinario.domain.exception.ResourceNotFoundException
 import com.ks.culinario.domain.model.User
 import com.ks.culinario.domain.repository.UserRepository
 import com.ks.culinario.infrastructure.service.UserServiceImpl
+import com.ks.culinario.network.dto.NewUserDTO
 import com.ks.culinario.network.dto.UserDTO
 import io.mockk.every
 import io.mockk.just
@@ -13,19 +15,21 @@ import io.mockk.verify
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
+import org.springframework.security.crypto.password.PasswordEncoder
 
 class UserServiceImplTest {
 
     private val userRepository: UserRepository = mockk()
     private val userMapper: UserMapper = mockk()
-    private val userService = UserServiceImpl(userRepository, userMapper)
+    private val passwordEncoder: PasswordEncoder = mockk()
+    private val userService = UserServiceImpl(userRepository, userMapper, passwordEncoder)
 
     @Test
     fun `should return UserDTO when user exists`() {
         // GIVEN
         val userId = 1L
         val user = User(userId, "testUser", "test@example.com", "password")
-        val userDTO = UserDTO(userId, "testUser", "test@example.com")
+        val userDTO = UserDTO(userId, "test@example.com", "testUser")
 
         every { userRepository.findById(userId) } returns user
         every { userMapper.toDTO(user) } returns userDTO
@@ -45,7 +49,7 @@ class UserServiceImplTest {
         every { userRepository.findById(userId) } returns null
 
         // WHEN & THEN
-        assertThrows<RuntimeException> {
+        assertThrows<ResourceNotFoundException> {
             userService.getUser(userId)
         }
     }
@@ -54,8 +58,8 @@ class UserServiceImplTest {
     fun `should return list of users`() {
         // GIVEN
         val user = User(1L, "user", "email", "pass")
-        val userDTO = UserDTO(1L, "user", "email")
-
+        val userDTO = UserDTO(1L, "email", "user")
+        
         every { userRepository.findAll() } returns listOf(user)
         every { userMapper.toDTO(user) } returns userDTO
 
@@ -71,39 +75,46 @@ class UserServiceImplTest {
     @Test
     fun `should create user`() {
         // GIVEN
-        val userDTO = UserDTO(null, "newUser", "new@email.com")
-        val userDomain = User(null, "newUser", "new@email.com", "")
-        val savedUser = User(1L, "newUser", "new@email.com", "")
-        val savedUserDTO = UserDTO(1L, "newUser", "new@email.com")
+        val newUserDTO = NewUserDTO("password", "new@email.com", "newUser")
+        val userDomain = User(null, "newUser", "new@email.com", "password")
+        val userWithHashedPassword = userDomain.copy(password = "hashedPassword")
+        val savedUser = User(1L, "newUser", "new@email.com", "hashedPassword")
+        val savedUserDTO = UserDTO(1L, "new@email.com", "newUser")
 
-        every { userMapper.toDomain(userDTO) } returns userDomain
-        every { userRepository.save(userDomain) } returns savedUser
+        every { userMapper.toDomain(newUserDTO) } returns userDomain
+        every { passwordEncoder.encode("password") } returns "hashedPassword"
+        every { userRepository.save(userWithHashedPassword) } returns savedUser
         every { userMapper.toDTO(savedUser) } returns savedUserDTO
 
         // WHEN
-         userService.createUser(userDTO)
+        val result = userService.createUser(newUserDTO)
 
         // THEN
-        verify(exactly = 1) { userRepository.save(userDomain) }
+        assertEquals(savedUserDTO, result)
+        verify(exactly = 1) { userRepository.save(userWithHashedPassword) }
+        verify(exactly = 1) { passwordEncoder.encode("password") }
     }
 
     @Test
     fun `should update user`() {
         // GIVEN
-        val userDTO = UserDTO(1L, "updatedUser", "updated@email.com")
-        val userDomain = User(1L, "updatedUser", "updated@email.com", "")
-        val updatedUser = User(1L, "updatedUser", "updated@email.com", "")
-        val updatedUserDTO = UserDTO(1L, "updatedUser", "updated@email.com")
-
-        every { userMapper.toDomain(userDTO) } returns userDomain
-        every { userRepository.save(userDomain) } returns updatedUser
-        every { userMapper.toDTO(updatedUser) } returns updatedUserDTO
+        val userId = 1L
+        val userDTO = UserDTO(userId, "updated@email.com", "updatedUser")
+        
+        val existingUser = User(userId, "oldUser", "old@email.com", "pass")
+        val updatedDomain = existingUser.copy(username = "updatedUser", email = "updated@email.com")
+        val savedUser = updatedDomain
+        
+        every { userRepository.findById(userId) } returns existingUser
+        every { userRepository.save(updatedDomain) } returns savedUser
+        every { userMapper.toDTO(savedUser) } returns userDTO
 
         // WHEN
-        userService.updateUser(userDTO)
+        val result = userService.updateUser(userDTO)
 
         // THEN
-        verify(exactly = 1) { userRepository.save(userDomain) }
+        assertEquals(userDTO, result)
+        verify(exactly = 1) { userRepository.save(updatedDomain) }
     }
 
     @Test

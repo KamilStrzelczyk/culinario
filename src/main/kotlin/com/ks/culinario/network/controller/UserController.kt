@@ -1,15 +1,9 @@
 package com.ks.culinario.network.controller
 
 import com.ks.culinario.domain.service.UserService
+import com.ks.culinario.network.dto.NewUserDTO
 import com.ks.culinario.network.dto.UserDTO
-import org.springframework.web.bind.annotation.DeleteMapping
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.PutMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api/users")
@@ -26,13 +20,13 @@ class UserController(private val userService: UserService) {
     }
 
     @PostMapping
-    fun createUser(@RequestBody userDTO: UserDTO) {
-        userService.createUser(userDTO)
+    fun createUser(@RequestBody newUserDTO: NewUserDTO) {
+         userService.createUser(newUserDTO)
     }
 
-    @PutMapping
+    @PutMapping()
     fun updateUser(@RequestBody userDTO: UserDTO) {
-        userService.updateUser(userDTO)
+         userService.updateUser(userDTO)
     }
 
     @DeleteMapping("/{id}")

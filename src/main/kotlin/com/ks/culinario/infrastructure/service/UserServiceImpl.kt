@@ -4,13 +4,16 @@ import com.ks.culinario.data.mapper.UserMapper
 import com.ks.culinario.domain.exception.ResourceNotFoundException
 import com.ks.culinario.domain.repository.UserRepository
 import com.ks.culinario.domain.service.UserService
+import com.ks.culinario.network.dto.NewUserDTO
 import com.ks.culinario.network.dto.UserDTO
+import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Service
 
 @Service
 class UserServiceImpl(
     private val userRepository: UserRepository,
-    private val userMapper: UserMapper
+    private val userMapper: UserMapper,
+    private val passwordEncoder: PasswordEncoder
 ) : UserService {
 
     override fun getAllUsers(): List<UserDTO> {
@@ -18,20 +21,30 @@ class UserServiceImpl(
     }
 
     override fun getUser(id: Long): UserDTO {
-        return userRepository.findById(id)?.let {
-            userMapper.toDTO(it)
-        } ?: throw ResourceNotFoundException("User not found with id: $id")
+        val user = userRepository.findById(id) ?: throw ResourceNotFoundException("User not found with id: $id")
+        return userMapper.toDTO(user)
     }
 
-    override fun createUser(user: UserDTO) {
-        userRepository.save(userMapper.toDomain(user))
+    override fun createUser(newUserDTO: NewUserDTO) {
+        val userDomain = userMapper.toDomain(newUserDTO)
+        passwordEncoder.encode(userDomain.password)?.let { hashedPassword ->
+            val userWithHashedPassword = userDomain.copy(
+                password = hashedPassword
+            )
+            userRepository.save(userWithHashedPassword)
+        }
     }
 
     override fun deleteUser(id: Long) {
         userRepository.deleteById(id)
     }
 
-    override fun updateUser(user: UserDTO) {
-        userRepository.save(userMapper.toDomain(user))
+    override fun updateUser(userDTO: UserDTO) {
+        val existingUser = userRepository.findById(userDTO.id) ?: throw ResourceNotFoundException("User not found")
+        val updatedDomain = existingUser.copy(
+            username = userDTO.name,
+            email = userDTO.email
+        )
+        userRepository.save(updatedDomain)
     }
 }

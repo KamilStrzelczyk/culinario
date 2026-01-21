@@ -3,6 +3,7 @@ package com.ks.culinario.infrastructure.service
 import com.ks.culinario.data.mapper.RecipeMapper
 import com.ks.culinario.domain.model.Recipe
 import com.ks.culinario.domain.repository.RecipeRepository
+import com.ks.culinario.network.dto.NewRecipeDTO
 import com.ks.culinario.network.dto.RecipeDTO
 import com.ks.culinario.network.dto.RecipeStepDTO
 import io.mockk.every
@@ -65,17 +66,18 @@ class RecipeServiceImplTest {
     @Test
     fun `should create recipe and return its DTO`() {
         // GIVEN
-        val newDTO = sampleRecipeDTO.copy(id = 0)
+        val newRecipeDTO = NewRecipeDTO("Test", "Desc", RecipeStepDTO("S1", "D1"), "Own", "Cat", 1)
         val newDomain = sampleRecipe.copy(id = 0)
         
-        every { recipeMapper.toDomain(newDTO) } returns newDomain
+        every { recipeMapper.toDomain(newRecipeDTO) } returns newDomain
         every { recipeRepository.save(newDomain) } returns Unit
         every { recipeMapper.toDTO(sampleRecipe) } returns sampleRecipeDTO
 
         // WHEN
-        recipeService.create(newDTO)
+        val result = recipeService.create(newRecipeDTO)
 
         // THEN
+        assertEquals(sampleRecipeDTO, result)
         verify(exactly = 1) { recipeRepository.save(newDomain) }
     }
 

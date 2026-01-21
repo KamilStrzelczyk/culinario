@@ -3,6 +3,7 @@ package com.ks.culinario.infrastructure.service
 import com.ks.culinario.data.mapper.ShoppingListMapper
 import com.ks.culinario.domain.model.ShoppingList
 import com.ks.culinario.domain.repository.ShoppingListRepository
+import com.ks.culinario.network.dto.NewShoppingListDTO
 import com.ks.culinario.network.dto.ShoppingListDTO
 import com.ks.culinario.network.dto.ShoppingListItemDTO
 import io.mockk.every
@@ -65,17 +66,18 @@ class ShoppingListServiceImplTest {
     @Test
     fun `should create shopping list and return its DTO`() {
         // GIVEN
-        val newDTO = sampleListDTO.copy(id = 0)
+        val newListDTO = NewShoppingListDTO("List", "Desc", listOf(ShoppingListItemDTO("Item", 1)))
         val newDomain = sampleList.copy(id = 0)
 
-        every { shoppingListMapper.toDomain(newDTO) } returns newDomain
+        every { shoppingListMapper.toDomain(newListDTO) } returns newDomain
         every { shoppingListRepository.save(newDomain) } returns Unit
         every { shoppingListMapper.toDTO(sampleList) } returns sampleListDTO
 
         // WHEN
-        shoppingListService.create(newDTO)
+        val result = shoppingListService.create(newListDTO)
 
         // THEN
+        assertEquals(sampleListDTO, result)
         verify(exactly = 1) { shoppingListRepository.save(newDomain) }
     }
 

@@ -5,6 +5,5 @@ import LoginRequestDTO
 interface AuthService {
 
     fun login(loginRequestDTO: LoginRequestDTO): String
-    fun logout(): Boolean
     fun refresh(): Boolean
 }

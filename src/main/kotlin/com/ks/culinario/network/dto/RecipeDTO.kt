@@ -8,7 +8,16 @@ data class RecipeDTO(
     val owner: String,
     val category: String,
     val created: String,
-    val shoppingListId: Int?
+    val shoppingListId: Int
+)
+
+data class NewRecipeDTO(
+    val title: String,
+    val description: String,
+    val step: RecipeStepDTO,
+    val owner: String,
+    val category: String,
+    val shoppingListId: Int
 )
 
 data class RecipeStepDTO(

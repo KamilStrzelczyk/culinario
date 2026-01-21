@@ -13,10 +13,7 @@ data class ShoppingListEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int? = null,
-
     val title: String = "",
     val description: String = "",
-
-    @Column(length = 4096)
-    val itemsJson: String = ""
+    val items: String = ""
 )

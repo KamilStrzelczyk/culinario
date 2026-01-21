@@ -27,11 +27,8 @@ class AuthServiceImpl(
         return token
     }
 
-    override fun logout(): Boolean {
-        TODO("Not yet implemented")
-    }
-
     override fun refresh(): Boolean {
         TODO("Not yet implemented")
     }
+
 }

@@ -4,6 +4,7 @@ import com.ks.culinario.data.mapper.RecipeMapper
 import com.ks.culinario.domain.exception.ResourceNotFoundException
 import com.ks.culinario.domain.repository.RecipeRepository
 import com.ks.culinario.domain.service.RecipeService
+import com.ks.culinario.network.dto.NewRecipeDTO
 import com.ks.culinario.network.dto.RecipeDTO
 import org.springframework.stereotype.Service
 
@@ -19,9 +20,9 @@ class RecipeServiceImpl(
         recipeRepository.findById(id)?.let { recipeMapper.toDTO(it) }
             ?: throw ResourceNotFoundException("Recipe not found with id: $id")
 
-    override fun create(recipeDTO: RecipeDTO) {
-        val domain = recipeMapper.toDomain(recipeDTO)
-         recipeRepository.save(domain)
+    override fun create(newRecipeDTO: NewRecipeDTO) {
+        val domain = recipeMapper.toDomain(newRecipeDTO)
+        recipeRepository.save(domain)
     }
 
     override fun delete(id: Int) {

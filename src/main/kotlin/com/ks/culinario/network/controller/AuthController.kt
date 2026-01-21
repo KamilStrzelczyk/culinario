@@ -17,9 +17,6 @@ class AuthController(private val authService: AuthService) {
         return authService.login(loginRequestDTO = request)
     }
 
-    @GetMapping("/logout")
-    fun logout(): Boolean = authService.logout()
-
     @GetMapping("/refresh")
     fun refresh(): Boolean = authService.refresh()
 }

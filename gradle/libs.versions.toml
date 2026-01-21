@@ -1,19 +1,18 @@
 [versions]
-kotlin = "2.2.21"
-springBoot = "4.0.1"
-springDependencyManagement = "1.1.7"
-springdoc = "2.2.0"
+kotlin = "1.9.24"
+springBoot = "3.3.0"
+springDependencyManagement = "1.1.5"
+springdoc = "2.5.0"
 jjwt = "0.12.5"
 mockk = "1.13.10"
-detekt = "1.23.8"
+detekt = "1.23.6"
+kotlinxSerialization = "1.6.3"
 
 [libraries]
 # Spring Boot
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
-spring-boot-starter-web-test = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
 spring-boot-starter-security = { module = "org.springframework.boot:spring-boot-starter-security" }
 spring-boot-starter-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
-spring-boot-starter-data-jpa-test = { module = "org.springframework.boot:spring-boot-starter-data-jpa-test" }
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
 
 # Detekt
@@ -22,6 +21,7 @@ detekt-gradlePlugin = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plug
 # Kotlin
 kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
 kotlin-test-junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 
 # Springdoc (Swagger)
 springdoc-openapi-ui = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "springdoc" }
@@ -41,6 +41,7 @@ junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }
 spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "springDependencyManagement" }
 detekt = {id = "io.gitlab.arturbosch.detekt", version.ref = "detekt"}
