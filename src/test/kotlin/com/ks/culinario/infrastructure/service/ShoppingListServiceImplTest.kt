@@ -6,6 +6,7 @@ import com.ks.culinario.domain.repository.ShoppingListRepository
 import com.ks.culinario.network.dto.NewShoppingListDTO
 import com.ks.culinario.network.dto.ShoppingListDTO
 import com.ks.culinario.network.dto.ShoppingListItemDTO
+import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just
 import io.mockk.mockk
@@ -70,7 +71,7 @@ class ShoppingListServiceImplTest {
         val newDomain = sampleList.copy(id = 0)
 
         every { shoppingListMapper.toDomain(newListDTO) } returns newDomain
-        every { shoppingListRepository.save(newDomain) }
+        every { shoppingListRepository.save(newDomain) } just Runs
         every { shoppingListMapper.toDTO(sampleList) } returns sampleListDTO
 
         // WHEN

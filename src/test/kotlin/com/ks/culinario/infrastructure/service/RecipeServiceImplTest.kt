@@ -6,6 +6,7 @@ import com.ks.culinario.domain.repository.RecipeRepository
 import com.ks.culinario.network.dto.NewRecipeDTO
 import com.ks.culinario.network.dto.RecipeDTO
 import com.ks.culinario.network.dto.RecipeStepDTO
+import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just
 import io.mockk.mockk
@@ -70,7 +71,7 @@ class RecipeServiceImplTest {
         val newDomain = sampleRecipe.copy(id = 0)
         
         every { recipeMapper.toDomain(newRecipeDTO) } returns newDomain
-        every { recipeRepository.save(newDomain) }
+        every { recipeRepository.save(newDomain) } just Runs
         every { recipeMapper.toDTO(sampleRecipe) } returns sampleRecipeDTO
 
         // WHEN
