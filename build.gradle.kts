@@ -26,6 +26,7 @@ dependencies {
     implementation(libs.spring.boot.starter.security)
     implementation(libs.spring.boot.starter.data.jpa)
     implementation(libs.kotlin.reflect)
+    implementation(libs.jackson.module.kotlin)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.springdoc.openapi.ui)
 

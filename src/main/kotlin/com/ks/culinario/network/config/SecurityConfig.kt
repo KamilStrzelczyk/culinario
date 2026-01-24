@@ -1,5 +1,6 @@
 package com.ks.culinario.network.config
 
+import com.ks.culinario.network.security.JwtAuthenticationEntryPoint
 import com.ks.culinario.network.security.JwtAuthenticationFilter
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -16,7 +17,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 class SecurityConfig(
-    private val jwtAuthenticationFilter: JwtAuthenticationFilter
+    private val jwtAuthenticationFilter: JwtAuthenticationFilter,
+    private val jwtAuthenticationEntryPoint: JwtAuthenticationEntryPoint
 ) {
 
     @Bean
@@ -34,6 +36,9 @@ class SecurityConfig(
         http
             .csrf { it.disable() }
             .sessionManagement { it.sessionCreationPolicy(SessionCreationPolicy.STATELESS) }
+            .exceptionHandling { 
+                it.authenticationEntryPoint(jwtAuthenticationEntryPoint) 
+            }
             .authorizeHttpRequests { auth ->
                 auth
                     .requestMatchers(

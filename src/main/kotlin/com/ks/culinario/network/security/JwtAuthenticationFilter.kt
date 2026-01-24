@@ -1,6 +1,7 @@
 package com.ks.culinario.network.security
 
 import com.ks.culinario.application.service.CustomUserDetailsService
+import com.ks.culinario.data.dao.TokenDao
 import io.jsonwebtoken.ExpiredJwtException
 import io.jsonwebtoken.MalformedJwtException
 import io.jsonwebtoken.UnsupportedJwtException
@@ -13,11 +14,13 @@ import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource
 import org.springframework.stereotype.Component
 import org.springframework.web.filter.OncePerRequestFilter
+import java.time.Instant
 
 @Component
 class JwtAuthenticationFilter(
     private val tokenProvider: JwtTokenProvider,
-    private val userDetailsService: CustomUserDetailsService
+    private val userDetailsService: CustomUserDetailsService,
+    private val tokenDao: TokenDao
 ) : OncePerRequestFilter() {
 
     companion object {
@@ -33,17 +36,23 @@ class JwtAuthenticationFilter(
             val jwt = getJwtFromRequest(request)
 
             if (jwt != null && tokenProvider.validateToken(jwt)) {
-                val username = tokenProvider.getUsernameFromJWT(jwt)
-                val userDetails = userDetailsService.loadUserByUsername(username)
+                
+                // Sprawdzamy w bazie, czy token jest ważny (nie revoked i nie expired)
+                val isTokenValid = tokenDao.findByToken(jwt)
+                    .map { !it.revoked && it.expiryDate.isAfter(Instant.now()) }
+                    .orElse(false)
 
-                val authentication = UsernamePasswordAuthenticationToken(
-                    userDetails,
-                    null,
-                    userDetails.authorities
-                )
-                authentication.details = WebAuthenticationDetailsSource().buildDetails(request)
+                if (isTokenValid) {
+                    val username = tokenProvider.getUsernameFromJWT(jwt)
+                    val userDetails = userDetailsService.loadUserByUsername(username)
+                    
+                    val authentication = UsernamePasswordAuthenticationToken(
+                        userDetails, null, userDetails.authorities
+                    )
+                    authentication.details = WebAuthenticationDetailsSource().buildDetails(request)
 
-                SecurityContextHolder.getContext().authentication = authentication
+                    SecurityContextHolder.getContext().authentication = authentication
+                }
             }
         } catch (ex: SignatureException) {
             logger.error("Invalid JWT signature: ", ex)
