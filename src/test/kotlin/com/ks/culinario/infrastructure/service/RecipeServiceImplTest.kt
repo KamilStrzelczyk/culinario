@@ -70,14 +70,13 @@ class RecipeServiceImplTest {
         val newDomain = sampleRecipe.copy(id = 0)
         
         every { recipeMapper.toDomain(newRecipeDTO) } returns newDomain
-        every { recipeRepository.save(newDomain) } returns Unit
+        every { recipeRepository.save(newDomain) }
         every { recipeMapper.toDTO(sampleRecipe) } returns sampleRecipeDTO
 
         // WHEN
-        val result = recipeService.create(newRecipeDTO)
+        recipeService.create(newRecipeDTO)
 
         // THEN
-        assertEquals(sampleRecipeDTO, result)
         verify(exactly = 1) { recipeRepository.save(newDomain) }
     }
 

@@ -27,12 +27,10 @@ class UserServiceImpl(
 
     override fun createUser(newUserDTO: NewUserDTO) {
         val userDomain = userMapper.toDomain(newUserDTO)
-        passwordEncoder.encode(userDomain.password)?.let { hashedPassword ->
-            val userWithHashedPassword = userDomain.copy(
-                password = hashedPassword
-            )
-            userRepository.save(userWithHashedPassword)
-        }
+        val userWithHashedPassword = userDomain.copy(
+            password = passwordEncoder.encode(userDomain.password)
+        )
+        userRepository.save(userWithHashedPassword)
     }
 
     override fun deleteUser(id: Long) {

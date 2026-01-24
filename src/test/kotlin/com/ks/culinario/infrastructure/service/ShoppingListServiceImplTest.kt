@@ -70,14 +70,13 @@ class ShoppingListServiceImplTest {
         val newDomain = sampleList.copy(id = 0)
 
         every { shoppingListMapper.toDomain(newListDTO) } returns newDomain
-        every { shoppingListRepository.save(newDomain) } returns Unit
+        every { shoppingListRepository.save(newDomain) }
         every { shoppingListMapper.toDTO(sampleList) } returns sampleListDTO
 
         // WHEN
-        val result = shoppingListService.create(newListDTO)
+        shoppingListService.create(newListDTO)
 
         // THEN
-        assertEquals(sampleListDTO, result)
         verify(exactly = 1) { shoppingListRepository.save(newDomain) }
     }
 

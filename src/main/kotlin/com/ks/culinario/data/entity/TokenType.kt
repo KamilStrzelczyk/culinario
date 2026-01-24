@@ -1,6 +1,3 @@
 package com.ks.culinario.data.entity
 
-enum class TokenType {
-    ACCESS,
-    REFRESH
-}
+// Plik przeniesiony do domain/model/TokenType.kt

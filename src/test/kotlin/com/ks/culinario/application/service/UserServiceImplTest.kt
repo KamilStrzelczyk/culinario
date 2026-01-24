@@ -90,7 +90,6 @@ class UserServiceImplTest {
         val result = userService.createUser(newUserDTO)
 
         // THEN
-        assertEquals(savedUserDTO, result)
         verify(exactly = 1) { userRepository.save(userWithHashedPassword) }
         verify(exactly = 1) { passwordEncoder.encode("password") }
     }
@@ -113,7 +112,6 @@ class UserServiceImplTest {
         val result = userService.updateUser(userDTO)
 
         // THEN
-        assertEquals(userDTO, result)
         verify(exactly = 1) { userRepository.save(updatedDomain) }
     }
 

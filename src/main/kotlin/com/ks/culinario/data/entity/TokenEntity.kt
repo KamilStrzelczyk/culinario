@@ -1,5 +1,6 @@
 package com.ks.culinario.data.entity
 
+import com.ks.culinario.domain.model.TokenType
 import jakarta.persistence.*
 import java.time.Instant
 

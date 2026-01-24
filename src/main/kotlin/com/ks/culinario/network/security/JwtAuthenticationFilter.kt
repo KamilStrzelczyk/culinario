@@ -1,7 +1,7 @@
 package com.ks.culinario.network.security
 
 import com.ks.culinario.application.service.CustomUserDetailsService
-import com.ks.culinario.data.dao.TokenDao
+import com.ks.culinario.domain.repository.TokenRepository
 import io.jsonwebtoken.ExpiredJwtException
 import io.jsonwebtoken.MalformedJwtException
 import io.jsonwebtoken.UnsupportedJwtException
@@ -20,7 +20,7 @@ import java.time.Instant
 class JwtAuthenticationFilter(
     private val tokenProvider: JwtTokenProvider,
     private val userDetailsService: CustomUserDetailsService,
-    private val tokenDao: TokenDao
+    private val tokenRepository: TokenRepository
 ) : OncePerRequestFilter() {
 
     companion object {
@@ -37,10 +37,8 @@ class JwtAuthenticationFilter(
 
             if (jwt != null && tokenProvider.validateToken(jwt)) {
                 
-                // Sprawdzamy w bazie, czy token jest ważny (nie revoked i nie expired)
-                val isTokenValid = tokenDao.findByToken(jwt)
-                    .map { !it.revoked && it.expiryDate.isAfter(Instant.now()) }
-                    .orElse(false)
+                val token = tokenRepository.findByToken(jwt)
+                val isTokenValid = token != null && !token.revoked && token.expiryDate.isAfter(Instant.now())
 
                 if (isTokenValid) {
                     val username = tokenProvider.getUsernameFromJWT(jwt)
