@@ -1,0 +1,16 @@
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\bin\Debug\net10.0\Culinario.Application.deps.json
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\bin\Debug\net10.0\Culinario.Application.dll
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\bin\Debug\net10.0\Culinario.Application.pdb
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\bin\Debug\net10.0\Culinario.Domain.dll
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\bin\Debug\net10.0\Culinario.Domain.pdb
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\Culinario.Application.csproj.AssemblyReference.cache
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\Culinario.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\Culinario.Application.AssemblyInfoInputs.cache
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\Culinario.Application.AssemblyInfo.cs
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\Culinario.Application.csproj.CoreCompileInputs.cache
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\Culinario.Application.sourcelink.json
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\Culinari.25850C8A.Up2Date
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\Culinario.Application.dll
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\refint\Culinario.Application.dll
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\Culinario.Application.pdb
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Application\obj\Debug\net10.0\ref\Culinario.Application.dll

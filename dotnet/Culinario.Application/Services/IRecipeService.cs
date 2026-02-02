@@ -1,0 +1,11 @@
+using Culinario.Application.DTOs;
+
+namespace Culinario.Application.Services;
+
+public interface IRecipeService
+{
+    Task<List<RecipeDTO>> GetAllAsync();
+    Task<RecipeDTO> GetAsync(int id);
+    Task CreateAsync(NewRecipeDTO newRecipeDTO);
+    Task DeleteAsync(int id);
+}
