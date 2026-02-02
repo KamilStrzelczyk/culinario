@@ -8,10 +8,12 @@ namespace Culinario.Infrastructure.Services;
 public class RecipeService : IRecipeService
 {
     private readonly IRecipeRepository _recipeRepository;
+    private readonly IShoppingListRepository _shoppingListRepository;
 
-    public RecipeService(IRecipeRepository recipeRepository)
+    public RecipeService(IRecipeRepository recipeRepository, IShoppingListRepository shoppingListRepository)
     {
         _recipeRepository = recipeRepository;
+        _shoppingListRepository = shoppingListRepository;
     }
 
     public async Task<List<RecipeDTO>> GetAllAsync()
@@ -27,17 +29,31 @@ public class RecipeService : IRecipeService
         return ToDTO(recipe);
     }
 
-    public async Task CreateAsync(NewRecipeDTO dto)
+    public async Task CreateAsync(NewRecipeDTO dto, string ownerUsername)
     {
+        int? shoppingListId = null;
+
+        if (dto.ShoppingList != null && !string.IsNullOrWhiteSpace(dto.ShoppingList.Title))
+        {
+            var shoppingList = new ShoppingList
+            {
+                Title = dto.ShoppingList.Title,
+                Description = dto.ShoppingList.Description,
+                Items = dto.ShoppingList.Items.Select(i => new ShoppingListItem { Name = i.Name, Amount = i.Amount }).ToList()
+            };
+            var savedList = await _shoppingListRepository.SaveAsync(shoppingList);
+            shoppingListId = savedList.Id;
+        }
+
         var recipe = new Recipe
         {
             Title = dto.Title,
             Description = dto.Description,
-            Step = new RecipeStep { Title = dto.Step.Title, Description = dto.Step.Description },
-            Owner = dto.Owner,
+            Steps = dto.Steps.Select(s => new RecipeStep { Title = s.Title, Description = s.Description }).ToList(),
+            Owner = ownerUsername, // Używamy nazwy zalogowanego użytkownika
             Category = dto.Category,
             Created = DateTime.Now.ToString("yyyy-MM-dd"),
-            ShoppingListId = dto.ShoppingListId
+            ShoppingListId = shoppingListId
         };
         await _recipeRepository.SaveAsync(recipe);
     }
@@ -51,10 +67,10 @@ public class RecipeService : IRecipeService
         r.Id,
         r.Title,
         r.Description,
-        new RecipeStepDTO(r.Step.Title, r.Step.Description),
+        r.Steps.Select(s => new RecipeStepDTO(s.Title, s.Description)).ToList(),
         r.Owner,
         r.Category,
         r.Created,
-        r.ShoppingListId ?? 0
+        r.ShoppingListId
     );
 }

@@ -1,0 +1,71 @@
+@model NewShoppingListDTO
+
+@{
+    ViewData["Title"] = "Create Shopping List";
+}
+
+<h1>Create Shopping List</h1>
+
+<form asp-action="Create">
+    <div class="form-group mb-3">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <h4>Items</h4>
+    <div id="items-container"></div>
+    <button type="button" id="add-item-btn" class="btn btn-outline-secondary mt-2">
+        <i class="bi bi-plus-circle"></i> Add Item
+    </button>
+
+    <div class="form-group mt-4">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            let itemIndex = 0;
+
+            function addItem() {
+                const itemHtml = `
+                    <div class="row mb-2 item-row">
+                        <div class="col-md-6">
+                            <input type="text" name="Items[${itemIndex}].Name" class="form-control" placeholder="Item name" />
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" name="Items[${itemIndex}].Amount" class="form-control" placeholder="Amount" />
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-danger remove-item-btn">Remove</button>
+                        </div>
+                    </div>`;
+                $('#items-container').append(itemHtml);
+                itemIndex++;
+            }
+
+            $('#add-item-btn').click(addItem);
+
+            $('#items-container').on('click', '.remove-item-btn', function () {
+                $(this).closest('.item-row').remove();
+                // Re-index
+                itemIndex = 0;
+                $('#items-container .item-row').each(function() {
+                    $(this).find('input').each(function() {
+                        const oldName = $(this).attr('name');
+                        const newName = oldName.replace(/\[\d+\]/, `[${itemIndex}]`);
+                        $(this).attr('name', newName);
+                    });
+                    itemIndex++;
+                });
+            });
+
+            addItem(); // Add one by default
+        });
+    </script>
+}

@@ -1,0 +1,40 @@
+@model Culinario.Application.DTOs.ShoppingListDTO
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index">Shopping Lists</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.Title</li>
+        </ol>
+    </nav>
+
+    <div class="card shadow-lg">
+        <div class="card-header bg-info text-white">
+            <h2 class="mb-0">@Model.Title</h2>
+        </div>
+        <div class="card-body">
+            <p class="lead">@Model.Description</p>
+            <hr />
+            <h4 class="text-info">Items to buy</h4>
+            <ul class="list-group">
+                @foreach (var item in Model.Items)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        @item.Name
+                        <span class="badge bg-primary rounded-pill">@item.Amount</span>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            <form asp-action="Delete" asp-route-id="@Model.Id" method="post" onsubmit="return confirm('Are you sure?');">
+                <button type="submit" class="btn btn-danger">Delete List</button>
+            </form>
+        </div>
+    </div>
+</div>

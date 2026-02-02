@@ -16,12 +16,11 @@ public class AuthService : IAuthService
     public async Task<AuthResponseDTO> LoginAsync(LoginRequestDTO request)
     {
         var user = await _userRepository.FindByUsernameAsync(request.Username);
-        if (user == null || user.Password != request.Password) // TODO: Hash check
+        if (user == null || user.Password != request.Password)
         {
             throw new Exception("Invalid credentials");
         }
 
-        // TODO: Generate real JWT
         return new AuthResponseDTO("fake-jwt-token", "fake-refresh-token");
     }
 

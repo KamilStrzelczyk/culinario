@@ -58,7 +58,6 @@ public class UserRepository : IUserRepository
         return entity == null ? null : ToDomain(entity);
     }
 
-    // Proste mappery (można wydzielić do AutoMapper)
     private static User ToDomain(UserEntity entity) => new()
     {
         Id = entity.Id,

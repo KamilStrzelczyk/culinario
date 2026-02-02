@@ -28,7 +28,7 @@ public class ShoppingListRepository : IShoppingListRepository
         return entity == null ? null : ToDomain(entity);
     }
 
-    public async Task SaveAsync(ShoppingList shoppingList)
+    public async Task<ShoppingList> SaveAsync(ShoppingList shoppingList)
     {
         var entity = ToEntity(shoppingList);
         if (entity.Id == null || entity.Id == 0)
@@ -40,6 +40,7 @@ public class ShoppingListRepository : IShoppingListRepository
             _context.ShoppingLists.Update(entity);
         }
         await _context.SaveChangesAsync();
+        return ToDomain(entity); // Zwracamy zmapowany obiekt z ID
     }
 
     public async Task DeleteByIdAsync(int id)

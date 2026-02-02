@@ -5,7 +5,7 @@ public class Recipe
     public int Id { get; set; }
     public string Title { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
-    public RecipeStep Step { get; set; } = new();
+    public List<RecipeStep> Steps { get; set; } = new(); // Zmiana na listę
     public string Owner { get; set; } = string.Empty;
     public string Category { get; set; } = string.Empty;
     public string Created { get; set; } = string.Empty;

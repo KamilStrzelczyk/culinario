@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Culinario.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6be014c0b0bfc5c1d8ebe4e492adaf6513211e3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02c8355cff1f5a4ebf8d4dcd9b0f519585c61a4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Culinario.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Culinario.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

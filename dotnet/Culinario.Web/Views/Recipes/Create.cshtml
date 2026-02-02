@@ -6,43 +6,107 @@
 
 <h1>Create Recipe</h1>
 
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
-                <input asp-for="Title" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <textarea asp-for="Description" class="form-control"></textarea>
-            </div>
-            <div class="form-group">
-                <label asp-for="Category" class="control-label"></label>
-                <input asp-for="Category" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Owner" class="control-label"></label>
-                <input asp-for="Owner" class="form-control" />
-            </div>
+<form asp-action="Create">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Basic Info</h4>
+            <div class="form-group mb-2"><label asp-for="Title"></label><input asp-for="Title" class="form-control" /></div>
+            <div class="form-group mb-2"><label asp-for="Description"></label><textarea asp-for="Description" class="form-control"></textarea></div>
+            <div class="form-group mb-2"><label asp-for="Category"></label><input asp-for="Category" class="form-control" /></div>
+        </div>
 
-            <h4>Step</h4>
-            <div class="form-group">
-                <label asp-for="Step.Title" class="control-label">Step Title</label>
-                <input asp-for="Step.Title" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Step.Description" class="control-label">Step Description</label>
-                <textarea asp-for="Step.Description" class="form-control"></textarea>
-            </div>
-
-            <div class="form-group mt-3">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        <div class="col-md-6">
+            <h4>Steps</h4>
+            <div id="steps-container"></div>
+            <button type="button" id="add-step-btn" class="btn btn-outline-secondary mt-2"><i class="bi bi-plus-circle"></i> Add Step</button>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <hr class="my-4" />
+
+    <div class="row">
+        <div class="col-12">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="add-shopping-list-toggle">
+                <label class="form-check-label" for="add-shopping-list-toggle">
+                    Create a Shopping List for this Recipe
+                </label>
+            </div>
+            <div id="shopping-list-section" style="display: none;">
+                <div class="card bg-light p-3">
+                    <div class="form-group mb-2"><label asp-for="ShoppingList.Title"></label><input asp-for="ShoppingList.Title" class="form-control" /></div>
+                    <div class="form-group mb-2"><label asp-for="ShoppingList.Description"></label><textarea asp-for="ShoppingList.Description" class="form-control"></textarea></div>
+                    <h5>Items</h5>
+                    <div id="shopping-list-items-container"></div>
+                    <button type="button" id="add-item-btn" class="btn btn-outline-secondary mt-2"><i class="bi bi-plus-circle"></i> Add Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group mt-4">
+        <input type="submit" value="Create" class="btn btn-primary btn-lg" />
+        <a asp-action="Index" class="btn btn-secondary btn-lg">Back to List</a>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // --- Steps Logic ---
+            let stepIndex = 0;
+            function addStep(isDefault = false) {
+                const stepHtml = `
+                    <div class="card mb-3 step-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h6 class="card-title mb-0">Step ${stepIndex + 1}</h6>
+                                ${!isDefault ? '<button type="button" class="btn-close remove-step-btn"></button>' : ''}
+                            </div>
+                            <hr>
+                            <div class="form-group"><input type="text" name="Steps[${stepIndex}].Title" class="form-control" placeholder="Step Title" /></div>
+                            <div class="form-group mt-2"><textarea name="Steps[${stepIndex}].Description" class="form-control" placeholder="Step Description"></textarea></div>
+                        </div>
+                    </div>`;
+                $('#steps-container').append(stepHtml);
+                stepIndex++;
+            }
+            $('#add-step-btn').click(() => addStep(false));
+            $('#steps-container').on('click', '.remove-step-btn', function () {
+                $(this).closest('.step-card').remove();
+                stepIndex = 0;
+                $('#steps-container .step-card').each(function() {
+                    $(this).find('input, textarea').each(function() { $(this).attr('name', $(this).attr('name').replace(/\[\d+\]/, `[${stepIndex}]`)); });
+                    $(this).find('.card-title').text(`Step ${stepIndex + 1}`);
+                    stepIndex++;
+                });
+            });
+            addStep(true);
+
+            // --- Shopping List Logic ---
+            $('#add-shopping-list-toggle').change(function() { $('#shopping-list-section').toggle(this.checked); });
+
+            let itemIndex = 0;
+            function addItem(isDefault = false) {
+                const itemHtml = `
+                    <div class="row mb-2 item-row align-items-center">
+                        <div class="col-5"><input type="text" name="ShoppingList.Items[${itemIndex}].Name" class="form-control" placeholder="Item name" /></div>
+                        <div class="col-5"><input type="number" name="ShoppingList.Items[${itemIndex}].Amount" class="form-control" placeholder="Amount" /></div>
+                        <div class="col-2">${!isDefault ? '<button type="button" class="btn btn-sm btn-danger remove-item-btn">X</button>' : ''}</div>
+                    </div>`;
+                $('#shopping-list-items-container').append(itemHtml);
+                itemIndex++;
+            }
+            $('#add-item-btn').click(() => addItem(false));
+            $('#shopping-list-items-container').on('click', '.remove-item-btn', function () {
+                $(this).closest('.item-row').remove();
+                itemIndex = 0;
+                $('#shopping-list-items-container .item-row').each(function() {
+                    $(this).find('input').each(function() { $(this).attr('name', $(this).attr('name').replace(/\[\d+\]/, `[${itemIndex}]`)); });
+                    itemIndex++;
+                });
+            });
+            addItem(true);
+        });
+    </script>
+}

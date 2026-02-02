@@ -4,20 +4,25 @@ public record RecipeDTO(
     int Id,
     string Title,
     string Description,
-    RecipeStepDTO Step,
+    List<RecipeStepDTO> Steps,
     string Owner,
     string Category,
     string Created,
-    int ShoppingListId
+    int? ShoppingListId
 );
 
 public record NewRecipeDTO(
     string Title,
     string Description,
-    RecipeStepDTO Step,
-    string Owner,
+    List<RecipeStepDTO> Steps,
     string Category,
-    int ShoppingListId
-);
+    NewShoppingListDTO? ShoppingList
+)
+{
+    public NewRecipeDTO() : this(string.Empty, string.Empty, new List<RecipeStepDTO>(), string.Empty, null) { }
+}
 
-public record RecipeStepDTO(string Title, string Description);
+public record RecipeStepDTO(string Title, string Description)
+{
+    public RecipeStepDTO() : this(string.Empty, string.Empty) { }
+}

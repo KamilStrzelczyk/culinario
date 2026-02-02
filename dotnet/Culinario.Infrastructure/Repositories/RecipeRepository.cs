@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Culinario.Domain.Models;
 using Culinario.Domain.Repositories;
 using Culinario.Infrastructure.Persistence;
@@ -51,25 +52,31 @@ public class RecipeRepository : IRecipeRepository
         }
     }
 
-    private static Recipe ToDomain(RecipeEntity entity) => new()
+    private static Recipe ToDomain(RecipeEntity entity)
     {
-        Id = entity.Id ?? 0,
-        Title = entity.Title,
-        Description = entity.Description,
-        Step = new RecipeStep { Title = entity.StepTitle, Description = entity.StepDescription },
-        Owner = entity.Owner,
-        Category = entity.Category,
-        Created = entity.Created,
-        ShoppingListId = entity.ShoppingListId
-    };
+        var steps = string.IsNullOrWhiteSpace(entity.StepsJson)
+            ? new List<RecipeStep>()
+            : JsonSerializer.Deserialize<List<RecipeStep>>(entity.StepsJson) ?? new List<RecipeStep>();
+
+        return new Recipe
+        {
+            Id = entity.Id ?? 0,
+            Title = entity.Title,
+            Description = entity.Description,
+            Steps = steps,
+            Owner = entity.Owner,
+            Category = entity.Category,
+            Created = entity.Created,
+            ShoppingListId = entity.ShoppingListId
+        };
+    }
 
     private static RecipeEntity ToEntity(Recipe domain) => new()
     {
         Id = domain.Id == 0 ? null : domain.Id,
         Title = domain.Title,
         Description = domain.Description,
-        StepTitle = domain.Step.Title,
-        StepDescription = domain.Step.Description,
+        StepsJson = JsonSerializer.Serialize(domain.Steps),
         Owner = domain.Owner,
         Category = domain.Category,
         Created = domain.Created,

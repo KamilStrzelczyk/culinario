@@ -29,12 +29,11 @@ public class UserService : IUserService
 
     public async Task<UserDTO> CreateUserAsync(NewUserDTO newUserDTO)
     {
-        // Tutaj normalnie użylibyśmy PasswordHasher
         var user = new User
         {
             Username = newUserDTO.Name,
             Email = newUserDTO.Email,
-            Password = newUserDTO.Password // TODO: Hash password!
+            Password = newUserDTO.Password
         };
         var savedUser = await _userRepository.SaveAsync(user);
         return new UserDTO(savedUser.Id ?? 0, savedUser.Username, savedUser.Email);
