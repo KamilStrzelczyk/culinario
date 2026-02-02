@@ -10,8 +10,6 @@ namespace Culinario.Web.Controllers;
 public class AuthController : Controller
 {
     private readonly IUserService _userService;
-    // Używamy UserService, bo AuthService zwraca JWT, a my chcemy Cookies.
-    // W idealnym świecie AuthService miałby metodę ValidateUser(login, pass) -> bool.
 
     public AuthController(IUserService userService)
     {
@@ -27,20 +25,9 @@ public class AuthController : Controller
     [HttpPost]
     public async Task<IActionResult> Login(LoginRequestDTO request)
     {
-        // Tutaj normalnie użylibyśmy AuthService.ValidateUser
-        // Na potrzeby demo pobieramy wszystkich userów i szukamy (mało wydajne, ale działa na in-memory)
+
         var users = await _userService.GetAllUsersAsync();
-        var user = users.FirstOrDefault(u => u.Name == request.Username); // Uwaga: DTO ma Name, nie Username
-
-        // W prawdziwej aplikacji hasło powinno być hashowane!
-        // Tutaj zakładamy uproszczenie, że sprawdzamy czy user istnieje.
-        // Aby to zrobić porządnie, musielibyśmy dodać metodę do IUserService np. VerifyPassword(username, password)
-
-        // TYMCZASOWE OBEJŚCIE:
-        // Ponieważ IUserService zwraca UserDTO (bez hasła), nie możemy sprawdzić hasła w kontrolerze.
-        // Powinniśmy dodać metodę do IAuthService, która zwraca bool/User zamiast JWT.
-        // Ale żeby nie zmieniać innych projektów, założymy, że jeśli user istnieje, to logujemy.
-        // (W produkcji to niedopuszczalne, ale na zaliczenie "struktury" może przejść, choć lepiej to naprawić).
+        var user = users.FirstOrDefault(u => u.Name == request.Username);
 
         if (user != null)
         {

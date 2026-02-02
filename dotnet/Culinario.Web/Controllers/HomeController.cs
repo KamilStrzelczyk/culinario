@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Culinario.Web.Controllers;
 
-[Authorize] // Wymaga logowania
+[Authorize]
 public class HomeController : Controller
 {
     public IActionResult Index()
