@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Culinario.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6be014c0b0bfc5c1d8ebe4e492adaf6513211e3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5535c171018c14d2f2421240f67c8f01f8fbeba4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Culinario.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Culinario.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

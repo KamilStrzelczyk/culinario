@@ -1,0 +1,53 @@
+@model IEnumerable<Culinario.Application.DTOs.RecipeDTO>
+
+@{
+    ViewData["Title"] = "Recipes";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Recipes</h1>
+    <a asp-action="Create" class="btn btn-success btn-lg">
+        <i class="bi bi-plus-lg"></i> Create New Recipe
+    </a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info text-center">
+        <h4>No recipes found!</h4>
+        <p>Start by creating your first recipe.</p>
+    </div>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm hover-effect">
+                    <!-- Można tu dodać obrazek w przyszłości -->
+                    <div class="card-header bg-transparent border-0 pt-3">
+                        <span class="badge bg-primary">@item.Category</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">@item.Title</h5>
+                        <p class="card-text text-muted text-truncate">@item.Description</p>
+                        <small class="text-muted">By: @item.Owner</small>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-primary w-100 stretched-link">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<style>
+    .hover-effect:hover {
+        transform: translateY(-5px);
+        transition: transform 0.2s;
+    }
+</style>

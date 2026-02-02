@@ -1,12 +1,53 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\culinario.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\culinario.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Prgramowanie\\visualstudio\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "D:\\Prgramowanie\\visualstudio\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\visualstudio\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "D:\\Prgramowanie\\visualstudio\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\visualstudio\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAEYHAAAAAAAAAAAmwGAHAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-02-02T17:34:39.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Culinario.Web",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Culinario.Web.csproj",
+              "RelativeDocumentMoniker": "Culinario.Web\\Culinario.Web.csproj",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Culinario.Web.csproj",
+              "RelativeToolTip": "Culinario.Web\\Culinario.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-02T17:34:01.949Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,4 @@
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\wwwroot\js\site.js
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\wwwroot\css\site.css
+wwwroot\css\site.css
+wwwroot\js\site.js
