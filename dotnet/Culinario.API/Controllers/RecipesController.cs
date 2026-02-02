@@ -1,5 +1,6 @@
 using Culinario.Application.DTOs;
 using Culinario.Application.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Culinario.API.Controllers;
@@ -35,13 +36,20 @@ public class RecipesController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize]
     public async Task<IActionResult> Create(NewRecipeDTO dto)
     {
-        await _recipeService.CreateAsync(dto);
+        var username = User.Identity?.Name;
+        if (string.IsNullOrEmpty(username))
+        {
+            return Unauthorized();
+        }
+        await _recipeService.CreateAsync(dto, username);
         return Ok();
     }
 
     [HttpDelete("{id}")]
+    [Authorize]
     public async Task<IActionResult> Delete(int id)
     {
         await _recipeService.DeleteAsync(id);
