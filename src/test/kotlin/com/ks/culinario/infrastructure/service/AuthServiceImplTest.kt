@@ -25,12 +25,10 @@ class AuthServiceImplTest {
     private val tokenRepository: TokenRepository = mockk()
     private val jwtTokenProvider: JwtTokenProvider = mockk()
     private val passwordEncoder: PasswordEncoder = mockk()
-    
-    // AuthServiceImpl ma teraz 4 zależności
+
     private val authService = AuthServiceImpl(userRepository, tokenRepository, jwtTokenProvider, passwordEncoder)
 
     init {
-        // Wstrzykujemy wartości z @Value
         ReflectionTestUtils.setField(authService, "accessExpirationMs", "900000")
         ReflectionTestUtils.setField(authService, "refreshExpirationMs", "604800000")
     }
