@@ -15,14 +15,12 @@ public class ShoppingListController : Controller
         _shoppingListService = shoppingListService;
     }
 
-    // GET: ShoppingList
     public async Task<IActionResult> Index()
     {
         var lists = await _shoppingListService.GetAllAsync();
         return View(lists);
     }
 
-    // GET: ShoppingList/Details/5
     public async Task<IActionResult> Details(int id)
     {
         try
@@ -36,13 +34,11 @@ public class ShoppingListController : Controller
         }
     }
 
-    // GET: ShoppingList/Create
     public IActionResult Create()
     {
         return View(new NewShoppingListDTO());
     }
 
-    // POST: ShoppingList/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(NewShoppingListDTO list)
@@ -55,7 +51,6 @@ public class ShoppingListController : Controller
         return View(list);
     }
 
-    // POST: ShoppingList/Delete/5
     [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int id)

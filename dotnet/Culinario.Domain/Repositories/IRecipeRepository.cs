@@ -6,6 +6,6 @@ public interface IRecipeRepository
 {
     Task<List<Recipe>> FindAllAsync();
     Task<Recipe?> FindByIdAsync(int id);
-    Task SaveAsync(Recipe recipe); // Tutaj void (Task), zgodnie z Twoim ostatnim życzeniem w Kotlinie
+    Task SaveAsync(Recipe recipe);
     Task DeleteByIdAsync(int id);
 }

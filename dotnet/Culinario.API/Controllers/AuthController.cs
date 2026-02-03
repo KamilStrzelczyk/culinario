@@ -37,7 +37,7 @@ public class AuthController : ControllerBase
     [HttpPost("logout")]
     public async Task<IActionResult> Logout()
     {
-        // W C# pobieramy username z tokena (ClaimsPrincipal)
+
         var username = User.Identity?.Name;
         if (string.IsNullOrEmpty(username))
         {

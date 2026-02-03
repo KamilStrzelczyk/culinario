@@ -13,7 +13,7 @@ public class RecipeEntity
     public string Title { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
 
-    public string StepsJson { get; set; } = string.Empty; // JSON z listą kroków
+    public string StepsJson { get; set; } = string.Empty;
 
     public string Owner { get; set; } = string.Empty;
     public string Category { get; set; } = string.Empty;

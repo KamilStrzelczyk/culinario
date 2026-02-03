@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,24 +43,24 @@
       "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\shared\\_authlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\shoppinglist\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\shoppinglist\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\persistence\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\persistence\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\shoppinglist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\shoppinglist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|solutionrelative:culinario.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\controllers\\shoppinglistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\controllers\\shoppinglistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\recipes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -51,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\recipes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -63,8 +79,148 @@
       "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\culinario.web.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\culinario.web.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\persistence\\culinariodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\persistence\\culinariodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\persistence\\entities\\shoppinglistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\persistence\\entities\\shoppinglistentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\shoppinglist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\shoppinglist\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\shoppinglist\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\shoppinglist\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\views\\shoppinglist\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\views\\shoppinglist\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|solutionrelative:culinario.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.application\\dtos\\recipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|solutionrelative:culinario.application\\dtos\\recipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.application\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|solutionrelative:culinario.application\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.web\\culinario.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{55555555-5555-5555-5555-555555555555}|Culinario.Web\\Culinario.Web.csproj|solutionrelative:culinario.web\\culinario.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\services\\recipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\repositories\\shoppinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\repositories\\shoppinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\repositories\\reciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\repositories\\reciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\persistence\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\persistence\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\persistence\\entities\\tokenentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\persistence\\entities\\tokenentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.infrastructure\\persistence\\entities\\recipeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|Culinario.Infrastructure\\Culinario.Infrastructure.csproj|solutionrelative:culinario.infrastructure\\persistence\\entities\\recipeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.domain\\repositories\\ishoppinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|solutionrelative:culinario.domain\\repositories\\ishoppinglistrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.domain\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|solutionrelative:culinario.domain\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.domain\\repositories\\ireciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|solutionrelative:culinario.domain\\repositories\\ireciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.domain\\models\\shoppinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|solutionrelative:culinario.domain\\models\\shoppinglist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.domain\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|solutionrelative:culinario.domain\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.domain\\culinario.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|solutionrelative:culinario.domain\\culinario.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.application\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|solutionrelative:culinario.application\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.application\\services\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|solutionrelative:culinario.application\\services\\irecipeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.application\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|solutionrelative:culinario.application\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.application\\dtos\\shoppinglistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|solutionrelative:culinario.application\\dtos\\shoppinglistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|solutionrelative:culinario.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.api\\controllers\\shoppinglistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|solutionrelative:culinario.api\\controllers\\shoppinglistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.api\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|solutionrelative:culinario.api\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|solutionrelative:culinario.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|Culinario.API\\Culinario.API.csproj|solutionrelative:culinario.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.application\\services\\ishoppinglistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|Culinario.Application\\Culinario.Application.csproj|solutionrelative:culinario.application\\services\\ishoppinglistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|d:\\prgramowanie\\ideaprojects\\culinario\\dotnet\\culinario.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|Culinario.Domain\\Culinario.Domain.csproj|solutionrelative:culinario.domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,193 +230,193 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Program.cs",
-              "RelativeDocumentMoniker": "Culinario.Web\\Program.cs",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Program.cs",
-              "RelativeToolTip": "Culinario.Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T20:02:28.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RecipesController.cs",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\RecipesController.cs",
-              "RelativeDocumentMoniker": "Culinario.Web\\Controllers\\RecipesController.cs",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\RecipesController.cs",
-              "RelativeToolTip": "Culinario.Web\\Controllers\\RecipesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T19:57:52.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Culinario.Web\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Culinario.Web\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T19:57:51.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_AuthLayout.cshtml",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Shared\\_AuthLayout.cshtml",
-              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Shared\\_AuthLayout.cshtml",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Shared\\_AuthLayout.cshtml",
-              "RelativeToolTip": "Culinario.Web\\Views\\Shared\\_AuthLayout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T19:57:40.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Details.cshtml",
-              "RelativeDocumentMoniker": "Culinario.Web\\Views\\ShoppingList\\Details.cshtml",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Details.cshtml",
-              "RelativeToolTip": "Culinario.Web\\Views\\ShoppingList\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T19:57:36.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Index.cshtml",
-              "RelativeDocumentMoniker": "Culinario.Web\\Views\\ShoppingList\\Index.cshtml",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Index.cshtml",
-              "RelativeToolTip": "Culinario.Web\\Views\\ShoppingList\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T19:57:35.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Culinario.Web\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Culinario.Web\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T19:57:34.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Culinario.Web\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Culinario.Web\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T19:57:33.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Create.cshtml",
               "RelativeDocumentMoniker": "Culinario.Web\\Views\\Recipes\\Create.cshtml",
               "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Create.cshtml",
               "RelativeToolTip": "Culinario.Web\\Views\\Recipes\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T19:57:30.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Recipes\\Index.cshtml",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Index.cshtml",
-              "RelativeToolTip": "Culinario.Web\\Views\\Recipes\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T19:57:29.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Details.cshtml",
-              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Recipes\\Details.cshtml",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Details.cshtml",
-              "RelativeToolTip": "Culinario.Web\\Views\\Recipes\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T19:57:28.69Z",
+              "WhenOpened": "2026-02-03T16:17:08.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:17:04.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:17:02.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:16:54.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Culinario.Web\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Culinario.Web\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwE0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T18:44:45.386Z",
+              "WhenOpened": "2026-02-03T16:13:43.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "Culinario.Web\\wwwroot\\js\\site.js",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "Culinario.Web\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-02T18:44:26.497Z",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Culinario.Web\\Program.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Program.cs",
+              "RelativeToolTip": "Culinario.Web\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAD4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:07:28.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Culinario.Web\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Culinario.Web\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-02T18:44:13.439Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowFUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:17:22.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Details.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Recipes\\Details.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Details.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\Recipes\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:26:02.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ShoppingListController.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\ShoppingListController.cs",
+              "RelativeDocumentMoniker": "Culinario.Web\\Controllers\\ShoppingListController.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\ShoppingListController.cs",
+              "RelativeToolTip": "Culinario.Web\\Controllers\\ShoppingListController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:16:28.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RecipesController.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\RecipesController.cs",
+              "RelativeDocumentMoniker": "Culinario.Web\\Controllers\\RecipesController.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\RecipesController.cs",
+              "RelativeToolTip": "Culinario.Web\\Controllers\\RecipesController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:16:27.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Persistence\\DbInitializer.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\DbInitializer.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Persistence\\DbInitializer.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:15:38.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Culinario.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Culinario.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:44.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_AuthLayout.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Shared\\_AuthLayout.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Shared\\_AuthLayout.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\Shared\\_AuthLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:17:38.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Culinario.Web\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Culinario.Web\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-03T16:16:22.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "site.css",
               "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Culinario.Web\\wwwroot\\css\\site.css",
@@ -268,19 +424,528 @@
               "RelativeToolTip": "Culinario.Web\\wwwroot\\css\\site.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-02-02T18:44:23.138Z",
+              "WhenOpened": "2026-02-03T16:23:27.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:25:44.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:17:33.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\Recipes\\Index.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\Recipes\\Index.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\Recipes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:36:54.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Program.cs",
+              "RelativeDocumentMoniker": "Culinario.API\\Program.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Program.cs",
+              "RelativeToolTip": "Culinario.API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:43:45.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Culinario.Web\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Culinario.Web\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-03T16:26:51.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CulinarioDbContext.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\CulinarioDbContext.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Persistence\\CulinarioDbContext.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\CulinarioDbContext.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Persistence\\CulinarioDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:15:37.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Index.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\ShoppingList\\Index.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Index.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\ShoppingList\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:17:32.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Details.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\ShoppingList\\Details.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Details.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\ShoppingList\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:17:32.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Create.cshtml",
+              "RelativeDocumentMoniker": "Culinario.Web\\Views\\ShoppingList\\Create.cshtml",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Views\\ShoppingList\\Create.cshtml",
+              "RelativeToolTip": "Culinario.Web\\Views\\ShoppingList\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T16:17:25.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ShoppingListEntity.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\Entities\\ShoppingListEntity.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Persistence\\Entities\\ShoppingListEntity.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\Entities\\ShoppingListEntity.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Persistence\\Entities\\ShoppingListEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:15:18.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AuthDTOs.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\DTOs\\AuthDTOs.cs",
+              "RelativeDocumentMoniker": "Culinario.Application\\DTOs\\AuthDTOs.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\DTOs\\AuthDTOs.cs",
+              "RelativeToolTip": "Culinario.Application\\DTOs\\AuthDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:57.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RecipeDTO.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\DTOs\\RecipeDTO.cs",
+              "RelativeDocumentMoniker": "Culinario.Application\\DTOs\\RecipeDTO.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\DTOs\\RecipeDTO.cs",
+              "RelativeToolTip": "Culinario.Application\\DTOs\\RecipeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:58.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Culinario.Application\\DTOs\\UserDTO.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "Culinario.Application\\DTOs\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:58.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Culinario.Web",
               "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Culinario.Web.csproj",
               "RelativeDocumentMoniker": "Culinario.Web\\Culinario.Web.csproj",
               "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Web\\Culinario.Web.csproj",
               "RelativeToolTip": "Culinario.Web\\Culinario.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-02T18:44:10.282Z"
+              "WhenOpened": "2026-02-03T16:16:15.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Services\\UserService.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Services\\UserService.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:16:14.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RecipeService.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Services\\RecipeService.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Services\\RecipeService.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Services\\RecipeService.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Services\\RecipeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:16:12.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Services\\AuthService.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:16:11.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RecipeRepository.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Repositories\\RecipeRepository.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Repositories\\RecipeRepository.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Repositories\\RecipeRepository.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Repositories\\RecipeRepository.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:16:00.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\Entities\\UserEntity.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Persistence\\Entities\\UserEntity.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\Entities\\UserEntity.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Persistence\\Entities\\UserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:15:35.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "TokenEntity.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\Entities\\TokenEntity.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Persistence\\Entities\\TokenEntity.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\Entities\\TokenEntity.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Persistence\\Entities\\TokenEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:15:32.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "RecipeEntity.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\Entities\\RecipeEntity.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Persistence\\Entities\\RecipeEntity.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Persistence\\Entities\\RecipeEntity.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Persistence\\Entities\\RecipeEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:15:19.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Culinario.Domain",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Culinario.Domain.csproj",
+              "RelativeDocumentMoniker": "Culinario.Domain\\Culinario.Domain.csproj",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Culinario.Domain.csproj",
+              "RelativeToolTip": "Culinario.Domain\\Culinario.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-03T16:14:54.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ShoppingListDTO.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\DTOs\\ShoppingListDTO.cs",
+              "RelativeDocumentMoniker": "Culinario.Application\\DTOs\\ShoppingListDTO.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\DTOs\\ShoppingListDTO.cs",
+              "RelativeToolTip": "Culinario.Application\\DTOs\\ShoppingListDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:14:33.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "Culinario.Application\\Services\\IUserService.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\Services\\IUserService.cs",
+              "RelativeToolTip": "Culinario.Application\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:38.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ShoppingListRepository.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Repositories\\ShoppingListRepository.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Repositories\\ShoppingListRepository.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Repositories\\ShoppingListRepository.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Repositories\\ShoppingListRepository.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowCoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:12:38.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Culinario.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Culinario.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:12:38.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Culinario.API\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Culinario.API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:14:25.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IRecipeService.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\Services\\IRecipeService.cs",
+              "RelativeDocumentMoniker": "Culinario.Application\\Services\\IRecipeService.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\Services\\IRecipeService.cs",
+              "RelativeToolTip": "Culinario.Application\\Services\\IRecipeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:36.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Models\\Recipe.cs",
+              "RelativeDocumentMoniker": "Culinario.Domain\\Models\\Recipe.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Models\\Recipe.cs",
+              "RelativeToolTip": "Culinario.Domain\\Models\\Recipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:27.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ShoppingList.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Models\\ShoppingList.cs",
+              "RelativeDocumentMoniker": "Culinario.Domain\\Models\\ShoppingList.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Models\\ShoppingList.cs",
+              "RelativeToolTip": "Culinario.Domain\\Models\\ShoppingList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:27.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IRecipeRepository.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Repositories\\IRecipeRepository.cs",
+              "RelativeDocumentMoniker": "Culinario.Domain\\Repositories\\IRecipeRepository.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Repositories\\IRecipeRepository.cs",
+              "RelativeToolTip": "Culinario.Domain\\Repositories\\IRecipeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:10:43.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IShoppingListRepository.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Repositories\\IShoppingListRepository.cs",
+              "RelativeDocumentMoniker": "Culinario.Domain\\Repositories\\IShoppingListRepository.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Repositories\\IShoppingListRepository.cs",
+              "RelativeToolTip": "Culinario.Domain\\Repositories\\IShoppingListRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:24.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Culinario.Domain\\Repositories\\IUserRepository.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Culinario.Domain\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:25.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ShoppingListController.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Controllers\\ShoppingListController.cs",
+              "RelativeDocumentMoniker": "Culinario.API\\Controllers\\ShoppingListController.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Controllers\\ShoppingListController.cs",
+              "RelativeToolTip": "Culinario.API\\Controllers\\ShoppingListController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:14:21.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "RecipesController.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Controllers\\RecipesController.cs",
+              "RelativeDocumentMoniker": "Culinario.API\\Controllers\\RecipesController.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Controllers\\RecipesController.cs",
+              "RelativeToolTip": "Culinario.API\\Controllers\\RecipesController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:14:19.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Culinario.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Culinario.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-03T16:14:00.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IShoppingListService.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\Services\\IShoppingListService.cs",
+              "RelativeDocumentMoniker": "Culinario.Application\\Services\\IShoppingListService.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\Services\\IShoppingListService.cs",
+              "RelativeToolTip": "Culinario.Application\\Services\\IShoppingListService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:37.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Culinario.Application\\Services\\IAuthService.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Application\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Culinario.Application\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:35.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Culinario.Domain\\Models\\User.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Domain\\Models\\User.cs",
+              "RelativeToolTip": "Culinario.Domain\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:13:15.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Culinario.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Culinario.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwC4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T16:06:23.575Z",
+              "EditorCaption": ""
             }
           ]
         }

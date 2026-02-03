@@ -6,6 +6,6 @@ public interface IShoppingListRepository
 {
     Task<List<ShoppingList>> FindAllAsync();
     Task<ShoppingList?> FindByIdAsync(int id);
-    Task<ShoppingList> SaveAsync(ShoppingList shoppingList); // Zmiana na zwrot obiektu
+    Task<ShoppingList> SaveAsync(ShoppingList shoppingList);
     Task DeleteByIdAsync(int id);
 }

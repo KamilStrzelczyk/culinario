@@ -40,7 +40,7 @@ public class ShoppingListRepository : IShoppingListRepository
             _context.ShoppingLists.Update(entity);
         }
         await _context.SaveChangesAsync();
-        return ToDomain(entity); // Zwracamy zmapowany obiekt z ID
+        return ToDomain(entity);
     }
 
     public async Task DeleteByIdAsync(int id)

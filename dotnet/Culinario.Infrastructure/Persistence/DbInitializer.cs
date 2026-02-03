@@ -15,7 +15,7 @@ public static class DbInitializer
         context.Users.Add(admin);
         context.SaveChanges();
 
-        // --- Lista zakupów 1: Pizza ---
+       
         var pizzaShoppingList = new ShoppingListEntity
         {
             Title = "Składniki na pizzę",
@@ -30,7 +30,7 @@ public static class DbInitializer
         };
         context.ShoppingLists.Add(pizzaShoppingList);
 
-        // --- Lista zakupów 2: Szarlotka ---
+        
         var applePieShoppingList = new ShoppingListEntity
         {
             Title = "Składniki na szarlotkę",
@@ -47,10 +47,10 @@ public static class DbInitializer
         context.ShoppingLists.Add(applePieShoppingList);
         context.SaveChanges();
 
-        // --- Przepisy ---
+       
         var recipes = new RecipeEntity[]
         {
-            // 1. Pizza (z listą zakupów)
+            
             new()
             {
                 Title = "Domowa Pizza Margherita",
@@ -66,7 +66,7 @@ public static class DbInitializer
                 Created = DateTime.Now.ToString("yyyy-MM-dd"),
                 ShoppingListId = pizzaShoppingList.Id
             },
-            // 2. Szarlotka (z listą zakupów)
+        
             new()
             {
                 Title = "Tradycyjna Szarlotka",
@@ -82,7 +82,7 @@ public static class DbInitializer
                 Created = DateTime.Now.AddDays(-2).ToString("yyyy-MM-dd"),
                 ShoppingListId = applePieShoppingList.Id
             },
-            // 3. Carbonara (bez listy zakupów)
+            
             new()
             {
                 Title = "Spaghetti Carbonara",
@@ -98,7 +98,7 @@ public static class DbInitializer
                 Category = "Obiad",
                 Created = DateTime.Now.AddDays(-5).ToString("yyyy-MM-dd"),
             },
-            // 4. Jajecznica (bez listy zakupów)
+            
             new()
             {
                 Title = "Jajecznica na boczku",
@@ -111,7 +111,7 @@ public static class DbInitializer
                 Category = "Śniadanie",
                 Created = DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd"),
             },
-            // 5. Sałatka Grecka (bez listy zakupów)
+           
             new()
             {
                 Title = "Sałatka Grecka",

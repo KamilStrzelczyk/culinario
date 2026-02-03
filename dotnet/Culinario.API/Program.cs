@@ -7,16 +7,13 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Database (In-Memory for now, like H2)
 builder.Services.AddDbContext<CulinarioDbContext>(options =>
     options.UseInMemoryDatabase("CulinarioDb"));
 
-// Dependency Injection
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IRecipeRepository, RecipeRepository>();
 builder.Services.AddScoped<IShoppingListRepository, ShoppingListRepository>();
