@@ -48,3 +48,116 @@
         </div>
     </div>
 </div>
+
+<div class="row mt-5 g-4 align-items-stretch">
+    <div class="col-lg-7">
+        <div class="card shadow-sm h-100">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="mb-0">Recipe board</h3>
+                    <button id="refreshRecipes" class="btn btn-sm btn-primary">Refresh</button>
+                </div>
+                <div id="recipeList" class="row g-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="mb-0">Live updates</h3>
+                    <span id="liveStatusBadge" class="badge bg-secondary">Connecting</span>
+                </div>
+                <div id="liveMessage" class="alert alert-light mb-0">Waiting for server signal...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const recipeList = document.getElementById('recipeList');
+        const liveMessage = document.getElementById('liveMessage');
+        const liveStatusBadge = document.getElementById('liveStatusBadge');
+
+        async function loadRecipes() {
+            const response = await fetch('/api/recipes/all');
+            const recipes = await response.json();
+
+            recipeList.innerHTML = '';
+
+            if (!Array.isArray(recipes) || recipes.length === 0) {
+                recipeList.innerHTML = '<div class="col-12"><div class="alert alert-info mb-0">No recipes found.</div></div>';
+                return;
+            }
+
+            recipes.forEach((recipe) => {
+                const card = document.createElement('div');
+                card.className = 'col-md-6';
+                card.innerHTML = `
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                                <h5 class="card-title mb-0">${recipe.title}</h5>
+                                <span class="badge bg-light text-dark">${recipe.category || 'General'}</span>
+                            </div>
+                            <p class="card-text text-muted mb-2">${recipe.description || 'No description yet.'}</p>
+                            <div class="small text-secondary">
+                                <div>Owner: ${recipe.owner}</div>
+                                <div>Created: ${recipe.created}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                recipeList.appendChild(card);
+            });
+        }
+
+        async function loadLiveStatus() {
+            try {
+                const response = await fetch('/live/status');
+                const data = await response.json();
+                liveMessage.textContent = data.message || 'System ready';
+            } catch (error) {
+                liveMessage.textContent = 'Server status unavailable';
+            }
+        }
+
+        function connectLiveSocket() {
+            const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
+            const socket = new WebSocket(`${protocol}://${window.location.host}/live/ws`);
+
+            socket.onopen = () => {
+                liveStatusBadge.textContent = 'Live';
+                liveStatusBadge.className = 'badge bg-success';
+                liveMessage.textContent = 'Connected to live server feed';
+            };
+
+            socket.onmessage = (event) => {
+                liveStatusBadge.textContent = 'Live';
+                liveStatusBadge.className = 'badge bg-success';
+                liveMessage.textContent = event.data;
+                loadRecipes();
+            };
+
+            socket.onclose = () => {
+                liveStatusBadge.textContent = 'Offline';
+                liveStatusBadge.className = 'badge bg-secondary';
+                liveMessage.textContent = 'Connection lost. Reconnecting...';
+                setTimeout(connectLiveSocket, 3000);
+            };
+
+            socket.onerror = () => {
+                liveStatusBadge.textContent = 'Warning';
+                liveStatusBadge.className = 'badge bg-warning text-dark';
+                liveMessage.textContent = 'Live socket error';
+            };
+        }
+
+        document.getElementById('refreshRecipes').addEventListener('click', loadRecipes);
+
+        loadLiveStatus();
+        loadRecipes();
+        connectLiveSocket();
+    </script>
+}

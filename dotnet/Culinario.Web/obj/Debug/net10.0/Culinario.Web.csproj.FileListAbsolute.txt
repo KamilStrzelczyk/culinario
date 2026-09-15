@@ -35,7 +35,6 @@ D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\st
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\staticwebassets.development.json
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\swae.build.ex.cache
-D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\Culinari.A2C648F1.Up2Date
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\Culinario.Web.dll
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\refint\Culinario.Web.dll
