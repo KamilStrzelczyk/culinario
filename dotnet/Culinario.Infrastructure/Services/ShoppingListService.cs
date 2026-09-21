@@ -33,7 +33,15 @@ public class ShoppingListService : IShoppingListService
         {
             Title = dto.Title,
             Description = dto.Description,
-            Items = dto.Items.Select(i => new ShoppingListItem { Name = i.Name, Amount = i.Amount }).ToList()
+            Items = dto.Items
+                .Where(i => !string.IsNullOrWhiteSpace(i.Name))
+                .GroupBy(i => i.Name.Trim(), StringComparer.OrdinalIgnoreCase)
+                .Select(group => new ShoppingListItem
+                {
+                    Name = group.First().Name.Trim(),
+                    Amount = group.Sum(x => x.Amount)
+                })
+                .ToList()
         };
         await _repository.SaveAsync(list);
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "e7ZC9EwvIE4=",
+  "dgSpecHash": "HYxXSZjyPqI=",
   "success": true,
   "projectFilePath": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Culinario.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,7 @@
     {
       "code": "NU1903",
       "level": "Warning",
-      "message": "Pakiet „Microsoft.Extensions.Caching.Memory” 8.0.0 ma znane wysoka luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-qj66-m88j-hmgj",
+      "message": "Pakiet „Microsoft.Extensions.Caching.Memory” 8.0.0 ma znane wysokie luki w zabezpieczeniach o ważności, https://github.com/advisories/GHSA-qj66-m88j-hmgj",
       "projectPath": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Culinario.Infrastructure.csproj",
       "warningLevel": 1,
       "filePath": "D:\\Prgramowanie\\IdeaProjects\\culinario\\dotnet\\Culinario.Infrastructure\\Culinario.Infrastructure.csproj",

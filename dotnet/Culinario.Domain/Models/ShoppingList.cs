@@ -10,6 +10,8 @@ public class ShoppingList
 
 public class ShoppingListItem
 {
+    public int Id { get; set; }
+    public int ShoppingListId { get; set; }
     public string Name { get; set; } = string.Empty;
     public int Amount { get; set; }
 }

@@ -41,3 +41,4 @@ D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\re
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\Culinario.Web.pdb
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\Culinario.Web.genruntimeconfig.cache
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\ref\Culinario.Web.dll
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.Web\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

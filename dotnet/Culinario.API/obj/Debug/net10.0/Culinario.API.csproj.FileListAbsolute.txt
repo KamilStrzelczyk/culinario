@@ -110,3 +110,4 @@ D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.API\obj\Debug\net10.0\re
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.API\obj\Debug\net10.0\Culinario.API.pdb
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.API\obj\Debug\net10.0\Culinario.API.genruntimeconfig.cache
 D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.API\obj\Debug\net10.0\ref\Culinario.API.dll
+D:\Prgramowanie\IdeaProjects\culinario\dotnet\Culinario.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

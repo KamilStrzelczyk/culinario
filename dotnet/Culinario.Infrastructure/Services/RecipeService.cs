@@ -2,6 +2,9 @@ using Culinario.Application.DTOs;
 using Culinario.Application.Services;
 using Culinario.Domain.Models;
 using Culinario.Domain.Repositories;
+using Culinario.Infrastructure.Persistence;
+using Culinario.Infrastructure.Persistence.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Culinario.Infrastructure.Services;
 
@@ -11,11 +14,13 @@ public class RecipeService : IRecipeService
     private static readonly SemaphoreSlim RecipeMutationGate = new(1, 1);
     private readonly IRecipeRepository _recipeRepository;
     private readonly IShoppingListRepository _shoppingListRepository;
+    private readonly CulinarioDbContext _context;
 
-    public RecipeService(IRecipeRepository recipeRepository, IShoppingListRepository shoppingListRepository)
+    public RecipeService(IRecipeRepository recipeRepository, IShoppingListRepository shoppingListRepository, CulinarioDbContext context)
     {
         _recipeRepository = recipeRepository;
         _shoppingListRepository = shoppingListRepository;
+        _context = context;
     }
 
     public async Task<List<RecipeDTO>> GetAllAsync()
@@ -65,6 +70,42 @@ public class RecipeService : IRecipeService
                 };
 
                 await _recipeRepository.SaveAsync(recipe);
+
+                if (dto.ShoppingList != null && dto.ShoppingList.Items.Any())
+                {
+                    foreach (var item in dto.ShoppingList.Items.Where(x => !string.IsNullOrWhiteSpace(x.Name)))
+                    {
+                        var normalized = item.Name.Trim();
+                        var ingredient = await _context.Ingredients.FirstOrDefaultAsync(x => x.NormalizedName == normalized.ToLowerInvariant());
+
+                        if (ingredient == null)
+                        {
+                            ingredient = new IngredientEntity
+                            {
+                                Name = normalized,
+                                NormalizedName = normalized.ToLowerInvariant()
+                            };
+                            _context.Ingredients.Add(ingredient);
+                            await _context.SaveChangesAsync();
+                        }
+
+                        var existingLink = await _context.RecipeIngredients.FirstOrDefaultAsync(x => x.RecipeId == recipe.Id && x.IngredientId == (ingredient.Id ?? 0));
+                        if (existingLink == null)
+                        {
+                            _context.RecipeIngredients.Add(new RecipeIngredientEntity
+                            {
+                                RecipeId = recipe.Id,
+                                IngredientId = ingredient.Id ?? 0,
+                                Name = normalized,
+                                Amount = item.Amount,
+                                Unit = "pcs"
+                            });
+                        }
+                    }
+
+                    await _context.SaveChangesAsync();
+                }
+
                 RecipeRealtimeState.QueueSignal($"New recipe added: {recipe.Title} by {ownerUsername}");
             }
             finally

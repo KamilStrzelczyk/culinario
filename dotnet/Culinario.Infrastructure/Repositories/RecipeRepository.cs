@@ -39,7 +39,9 @@ public class RecipeRepository : IRecipeRepository
         {
             _context.Recipes.Update(entity);
         }
+
         await _context.SaveChangesAsync();
+        recipe.Id = entity.Id ?? 0;
     }
 
     public async Task DeleteByIdAsync(int id)

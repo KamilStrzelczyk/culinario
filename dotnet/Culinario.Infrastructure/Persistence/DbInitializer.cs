@@ -15,34 +15,47 @@ public static class DbInitializer
         context.Users.Add(admin);
         context.SaveChanges();
 
-       
+        var ingredients = new List<IngredientEntity>
+        {
+            new() { Name = "Mąka pszenna typ 00", NormalizedName = "mąka pszenna typ 00" },
+            new() { Name = "Ser mozzarella", NormalizedName = "ser mozzarella" },
+            new() { Name = "Sos pomidorowy", NormalizedName = "sos pomidorowy" },
+            new() { Name = "Drożdże", NormalizedName = "drożdże" },
+            new() { Name = "Jabłka (szara reneta)", NormalizedName = "jabłka (szara reneta)" },
+            new() { Name = "Mąka krupczatka", NormalizedName = "mąka krupczatka" },
+            new() { Name = "Masło", NormalizedName = "masło" },
+            new() { Name = "Cukier", NormalizedName = "cukier" },
+            new() { Name = "Cynamon", NormalizedName = "cynamon" }
+        };
+        context.Ingredients.AddRange(ingredients);
+        context.SaveChanges();
+
         var pizzaShoppingList = new ShoppingListEntity
         {
             Title = "Składniki na pizzę",
             Description = "Zakupy na piątkowy wieczór",
-            ItemsJson = JsonSerializer.Serialize(new List<ShoppingListItem>
+            Items = new List<ShoppingListItemEntity>
             {
-                new() { Name = "Mąka pszenna typ 00", Amount = 500 },
-                new() { Name = "Ser mozzarella", Amount = 300 },
-                new() { Name = "Sos pomidorowy", Amount = 1 },
-                new() { Name = "Drożdże", Amount = 25 }
-            })
+                new() { Name = "Mąka pszenna typ 00", NormalizedName = "mąka pszenna typ 00", Amount = 500 },
+                new() { Name = "Ser mozzarella", NormalizedName = "ser mozzarella", Amount = 300 },
+                new() { Name = "Sos pomidorowy", NormalizedName = "sos pomidorowy", Amount = 1 },
+                new() { Name = "Drożdże", NormalizedName = "drożdże", Amount = 25 }
+            }
         };
         context.ShoppingLists.Add(pizzaShoppingList);
 
-        
         var applePieShoppingList = new ShoppingListEntity
         {
             Title = "Składniki na szarlotkę",
             Description = "Na pyszne, domowe ciasto",
-            ItemsJson = JsonSerializer.Serialize(new List<ShoppingListItem>
+            Items = new List<ShoppingListItemEntity>
             {
-                new() { Name = "Jabłka (szara reneta)", Amount = 1500 },
-                new() { Name = "Mąka krupczatka", Amount = 500 },
-                new() { Name = "Masło", Amount = 250 },
-                new() { Name = "Cukier", Amount = 150 },
-                new() { Name = "Cynamon", Amount = 1 }
-            })
+                new() { Name = "Jabłka (szara reneta)", NormalizedName = "jabłka (szara reneta)", Amount = 1500 },
+                new() { Name = "Mąka krupczatka", NormalizedName = "mąka krupczatka", Amount = 500 },
+                new() { Name = "Masło", NormalizedName = "masło", Amount = 250 },
+                new() { Name = "Cukier", NormalizedName = "cukier", Amount = 150 },
+                new() { Name = "Cynamon", NormalizedName = "cynamon", Amount = 1 }
+            }
         };
         context.ShoppingLists.Add(applePieShoppingList);
         context.SaveChanges();

@@ -13,5 +13,5 @@ public class ShoppingListEntity
     public string Title { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
 
-    public string ItemsJson { get; set; } = string.Empty;
+    public ICollection<ShoppingListItemEntity> Items { get; set; } = new List<ShoppingListItemEntity>();
 }

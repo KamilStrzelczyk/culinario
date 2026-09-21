@@ -8,4 +8,6 @@ public interface IShoppingListRepository
     Task<ShoppingList?> FindByIdAsync(int id);
     Task<ShoppingList> SaveAsync(ShoppingList shoppingList);
     Task DeleteByIdAsync(int id);
+    Task<bool> ContainsItemAsync(int shoppingListId, string itemName);
+    Task<List<string>> FindRecipeTitlesContainingIngredientAsync(string ingredientName);
 }
